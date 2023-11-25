@@ -20,7 +20,8 @@ public class PohybHlHrdiny : MonoBehaviour
     private bool groundedPlayer;
     private Transform cameratrans;
     private float rychlost;
-    
+    private float jumpcount = 0;
+
 
     private InputAction moveaction;
     private InputAction jumpaction;
@@ -44,6 +45,7 @@ public class PohybHlHrdiny : MonoBehaviour
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)
         {
+            jumpcount = 0;
             playerVelocity.y = 0f;
         }
 
@@ -63,8 +65,9 @@ public class PohybHlHrdiny : MonoBehaviour
         controller.Move(move * Time.deltaTime * rychlost);
 
         // Changes the height position of the player..
-        if (jumpaction.triggered && groundedPlayer)
+        if (jumpaction.triggered && groundedPlayer || jumpaction.triggered && jumpcount == 1)
         {
+            jumpcount++;
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
         }
 
