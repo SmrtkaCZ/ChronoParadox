@@ -14,12 +14,19 @@ public class PohybHlHrdiny : MonoBehaviour
     [SerializeField]
     private float RotationSpeed = 5f;
 
+    [Header("Rules")]
+    [SerializeField]
+    private bool doublejumpallowed = true;
+    [SerializeField]
+    private bool sprintallowed = true;
+
+    //values
     private CharacterController controller;
     private PlayerInput playerInput;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
     private Transform cameratrans;
-    private float rychlost;
+    private float speed;
     private float jumpcount = 0;
 
 
@@ -53,19 +60,18 @@ public class PohybHlHrdiny : MonoBehaviour
         Vector3 move = new Vector3(input.x, 0, input.y);
         move = move.x * cameratrans.right.normalized + move.z * cameratrans.forward.normalized;
         move.y = 0f;
-        if(sprintaction.ReadValue<float>() > 0)
+        if(sprintaction.ReadValue<float>() > 0 && sprintallowed)
         {
-            rychlost = playerSpeed * 2f;
-            Debug.Log("ok");
+            speed = playerSpeed * 2f;
         }
         else
         {
-            rychlost = playerSpeed;
+            speed = playerSpeed;
         }
-        controller.Move(move * Time.deltaTime * rychlost);
+        controller.Move(move * Time.deltaTime * speed);
 
         // Changes the height position of the player..
-        if (jumpaction.triggered && groundedPlayer || jumpaction.triggered && jumpcount == 1)
+        if (jumpaction.triggered && groundedPlayer || jumpaction.triggered && jumpcount == 1 && doublejumpallowed)
         {
             jumpcount++;
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);

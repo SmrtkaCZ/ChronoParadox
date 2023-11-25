@@ -798,6 +798,8 @@ MonoBehaviour:
   jumpHeight: 1
   gravityValue: -9.81
   RotationSpeed: 8
+  doublejumpallowed: 0
+  sprintallowed: 0
 --- !u!114 &742036585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1283,8 +1285,8 @@ MonoBehaviour:
     m_InputAxisName: Mouse Y
     m_InputAxisValue: 0
     m_InvertInput: 1
-    m_MinValue: -70
-    m_MaxValue: 70
+    m_MinValue: -25
+    m_MaxValue: 40
     m_Wrap: 0
     m_Recentering:
       m_enabled: 0
@@ -1301,7 +1303,7 @@ MonoBehaviour:
   m_HorizontalAxis:
     Value: 0
     m_SpeedMode: 1
-    m_MaxSpeed: 0.8
+    m_MaxSpeed: 0.2
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
