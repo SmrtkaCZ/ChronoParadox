@@ -19,9 +19,12 @@ public class PohybHlHrdiny : MonoBehaviour
     private Vector3 playerVelocity;
     private bool groundedPlayer;
     private Transform cameratrans;
+    private float rychlost;
+    
 
     private InputAction moveaction;
     private InputAction jumpaction;
+    private InputAction sprintaction;
 
     private void Start()
     {
@@ -32,6 +35,7 @@ public class PohybHlHrdiny : MonoBehaviour
         cameratrans = Camera.main.transform;
         moveaction = playerInput.actions["WSAD"];
         jumpaction = playerInput.actions["Jump"];
+        sprintaction = playerInput.actions["Sprint"];
         
     }
 
@@ -47,7 +51,16 @@ public class PohybHlHrdiny : MonoBehaviour
         Vector3 move = new Vector3(input.x, 0, input.y);
         move = move.x * cameratrans.right.normalized + move.z * cameratrans.forward.normalized;
         move.y = 0f;
-        controller.Move(move * Time.deltaTime * playerSpeed);
+        if(sprintaction.ReadValue<float>() > 0)
+        {
+            rychlost = playerSpeed * 2f;
+            Debug.Log("ok");
+        }
+        else
+        {
+            rychlost = playerSpeed;
+        }
+        controller.Move(move * Time.deltaTime * rychlost);
 
         // Changes the height position of the player..
         if (jumpaction.triggered && groundedPlayer)
