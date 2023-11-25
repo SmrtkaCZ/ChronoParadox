@@ -1,58 +1,65 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(CharacterController),typeof(PlayerInput))]
 public class PohybHlHrdiny : MonoBehaviour
 {
-    [Header("Možnosti pohybu")]
+    [Header("Values for change")]
     [SerializeField]
-    public int rychlost;
-    public float nahoru;
+    private float playerSpeed = 2.0f;
+    [SerializeField]
+    private float jumpHeight = 1.0f;
+    [SerializeField]
+    private float gravityValue = -9.81f;
+    [SerializeField]
+    private float RotationSpeed = 5f;
 
-    Rigidbody teleso;
-    Vector3 pohybFinal;
-    private int pocetbodu;
-    private bool skociljsem = true;
-    private bool con = false;
+    private CharacterController controller;
+    private PlayerInput playerInput;
+    private Vector3 playerVelocity;
+    private bool groundedPlayer;
+    private Transform cameratrans;
 
+    private InputAction moveaction;
+    private InputAction jumpaction;
 
-    void Start()
+    private void Start()
     {
-        teleso = GetComponent<Rigidbody>();
-        Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        controller = GetComponent<CharacterController>();
+        playerInput = GetComponent<PlayerInput>();
+        cameratrans = Camera.main.transform;
+        moveaction = playerInput.actions["WSAD"];
+        jumpaction = playerInput.actions["Jump"];
+        
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        teleso.AddForce(pohybFinal * rychlost);
-    }
-
-    public void Movement(InputAction.CallbackContext kontext)
-    {
-        Vector2 pomocny = kontext.ReadValue<Vector2>();
-        pohybFinal = new Vector3(pomocny.x, 0f, pomocny.y);
-    }
-    public void Jump(InputAction.CallbackContext kontext)
-    {
-        if (skociljsem && kontext.performed)
+        groundedPlayer = controller.isGrounded;
+        if (groundedPlayer && playerVelocity.y < 0)
         {
-            teleso.AddForce(Vector3.up * nahoru);
+            playerVelocity.y = 0f;
         }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Ground")
+
+        Vector2 input = moveaction.ReadValue<Vector2>();
+        Vector3 move = new Vector3(input.x, 0, input.y);
+        move = move.x * cameratrans.right.normalized + move.z * cameratrans.forward.normalized;
+        move.y = 0f;
+        controller.Move(move * Time.deltaTime * playerSpeed);
+
+        // Changes the height position of the player..
+        if (jumpaction.triggered && groundedPlayer)
         {
-            skociljsem = true;
+            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
         }
-    }
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.tag == "Ground")
-        {
-            skociljsem = false;
-        }
+
+        playerVelocity.y += gravityValue * Time.deltaTime;
+        controller.Move(playerVelocity * Time.deltaTime);
+
+
+        Quaternion rotation = Quaternion.Euler(0, cameratrans.eulerAngles.y, 0);
+        transform.rotation = Quaternion.Lerp(transform.rotation, rotation, RotationSpeed * Time.deltaTime);
     }
 }
