@@ -7,7 +7,7 @@ public class Autodelabrmbrm : MonoBehaviour
     [SerializeField]
     private float brmbrm = 0.1F;
     private float rych;
-
+    private float brrrm = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,21 +16,28 @@ public class Autodelabrmbrm : MonoBehaviour
     void Update()
     {
         rych += brmbrm * Time.deltaTime;
-        if (transform.rotation.y == 0)
+        if(brrrm > 5) 
+        {
+            transform.Rotate(0, 90, 0);
+            brrrm = 0;
+            Debug.Log(transform.rotation.y);
+        }
+        if (transform.rotation.y == 0f)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + rych);  
         }
-        else if (transform.rotation.y == 90)
+        if (transform.rotation.y == 0.7071068F)
         {
             transform.position = new Vector3(transform.position.x + rych, transform.position.y, transform.position.z);
         }
-        else if (transform.rotation.y == 180)
+        if (transform.rotation.y == 1)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - rych);
         }
-        else if (transform.rotation.y == 270)
+        if (transform.rotation.y == -0.7071068F)
         {
             transform.position = new Vector3(transform.position.x - rych, transform.position.y, transform.position.z);
         }
+        brrrm+= Time.deltaTime; 
     }
 }

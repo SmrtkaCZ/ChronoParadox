@@ -7,7 +7,7 @@ public class CarSpawner : MonoBehaviour
     [SerializeField]
     private GameObject Nakary;
     private float timer = 0;
-    private float spawnrate = 10;
+    private float spawnrate = 100000;
     // Start is called before the first frame update
     void Start()
     {
