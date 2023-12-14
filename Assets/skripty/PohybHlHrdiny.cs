@@ -84,4 +84,12 @@ public class PohybHlHrdiny : MonoBehaviour
         Quaternion rotation = Quaternion.Euler(0, cameratrans.eulerAngles.y, 0);
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, RotationSpeed * Time.deltaTime);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Point")
+        {
+            FFA.body++;
+            other.gameObject.SetActive(false);
+        }
+    }
 }
