@@ -42,4 +42,12 @@ public class Autodelabrmbrm : MonoBehaviour
             transform.position = new Vector3(transform.position.x - rych, transform.position.y, transform.position.z);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "CarDestroyer")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
