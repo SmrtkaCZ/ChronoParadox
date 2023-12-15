@@ -16,6 +16,7 @@ public class zemmizi : MonoBehaviour
             {
                 zmiz = false;
                 transform.position = new Vector3(transform.position.x, 0F, transform.position.z);
+                rych = 0;
             }
             rych += yourDadsspeedwhenhefindoutaboutu * Time.deltaTime;
             transform.position = new Vector3(transform.position.x , transform.position.y - rych, transform.position.z);
