@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -34,6 +35,8 @@ public class PohybHlHrdiny : MonoBehaviour
     private InputAction jumpaction;
     private InputAction sprintaction;
 
+    private Vector3 StartLocation;
+
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -44,6 +47,7 @@ public class PohybHlHrdiny : MonoBehaviour
         moveaction = playerInput.actions["WSAD"];
         jumpaction = playerInput.actions["Jump"];
         sprintaction = playerInput.actions["Sprint"];
+        StartLocation = transform.position;
         
     }
 
@@ -83,6 +87,11 @@ public class PohybHlHrdiny : MonoBehaviour
 
         Quaternion rotation = Quaternion.Euler(0, cameratrans.eulerAngles.y, 0);
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, RotationSpeed * Time.deltaTime);
+
+        if(transform.position.y <= -10F)
+        {
+            transform.position = StartLocation;
+        }
     }
     private void OnTriggerEnter(Collider other)
     {

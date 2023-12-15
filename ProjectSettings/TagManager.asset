@@ -6,6 +6,9 @@ TagManager:
   tags:
   - CarDestroyer
   - Point
+  - Panel
+  - Tagprokamer
+  - mizicizem
   layers:
   - Default
   - TransparentFX
