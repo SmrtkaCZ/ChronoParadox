@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(CharacterController),typeof(PlayerInput))]
 public class PohybHlHrdiny : MonoBehaviour
@@ -34,6 +35,7 @@ public class PohybHlHrdiny : MonoBehaviour
     private InputAction moveaction;
     private InputAction jumpaction;
     private InputAction sprintaction;
+    private InputAction intErekce;
 
     private Vector3 StartLocation;
 
@@ -47,6 +49,7 @@ public class PohybHlHrdiny : MonoBehaviour
         moveaction = playerInput.actions["WSAD"];
         jumpaction = playerInput.actions["Jump"];
         sprintaction = playerInput.actions["Sprint"];
+        intErekce = playerInput.actions["Interaction"];
         StartLocation = transform.position;
         
     }
@@ -64,6 +67,7 @@ public class PohybHlHrdiny : MonoBehaviour
         Vector3 move = new Vector3(input.x, 0, input.y);
         move = move.x * cameratrans.right.normalized + move.z * cameratrans.forward.normalized;
         move.y = 0f;
+        //sprint
         if(sprintaction.ReadValue<float>() > 0 && sprintallowed)
         {
             speed = playerSpeed * 2f;
@@ -74,7 +78,7 @@ public class PohybHlHrdiny : MonoBehaviour
         }
         controller.Move(move * Time.deltaTime * speed);
 
-        // Changes the height position of the player..
+        // Jump
         if (jumpaction.triggered && groundedPlayer || jumpaction.triggered && jumpcount == 1 && doublejumpallowed)
         {
             jumpcount++;
@@ -88,10 +92,20 @@ public class PohybHlHrdiny : MonoBehaviour
         Quaternion rotation = Quaternion.Euler(0, cameratrans.eulerAngles.y, 0);
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, RotationSpeed * Time.deltaTime);
 
+        //Interekce
+        if(intErekce.triggered && FFA.ucaninter)
+        {
+            FFA.pressedE = true;
+            FFA.ucaninter = false;
+        }
+
+
+        //dropped
         if(transform.position.y <= -10F)
         {
             transform.position = StartLocation;
         }
+        
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -99,6 +113,14 @@ public class PohybHlHrdiny : MonoBehaviour
         {
             FFA.body++;
             other.gameObject.SetActive(false);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "PortalTutor")
+        {
+            SceneManager.LoadScene(2, LoadSceneMode.Single);
         }
     }
 }

@@ -9,6 +9,7 @@ TagManager:
   - Panel
   - Tagprokamer
   - mizicizem
+  - PortalTutor
   layers:
   - Default
   - TransparentFX

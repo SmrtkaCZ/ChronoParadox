@@ -8,4 +8,6 @@ using UnityEngine;
 static class FFA
 {
     public static float body = 0;
+    public static bool ucaninter = false;
+    public static bool pressedE = false;
 }
