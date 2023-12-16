@@ -1,3 +1,5 @@
+using System;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -22,6 +24,9 @@ public class PohybHlHrdiny : MonoBehaviour
     [SerializeField]
     private bool sprintallowed = true;
 
+    [Header("Objekty")]
+    public Canvas Pauza;
+
     //values
     private CharacterController controller;
     private PlayerInput playerInput;
@@ -36,11 +41,13 @@ public class PohybHlHrdiny : MonoBehaviour
     private InputAction jumpaction;
     private InputAction sprintaction;
     private InputAction intErekce;
+    private InputAction ESCAPE;
 
-    private Vector3 StartLocation;
+    private bool pauza = false;
 
     private void Start()
     {
+        Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         controller = GetComponent<CharacterController>();
@@ -50,7 +57,9 @@ public class PohybHlHrdiny : MonoBehaviour
         jumpaction = playerInput.actions["Jump"];
         sprintaction = playerInput.actions["Sprint"];
         intErekce = playerInput.actions["Interaction"];
-        StartLocation = transform.position;
+        ESCAPE = playerInput.actions["ESC"];
+
+        FFA.StartPozice = transform.position;
         
     }
 
@@ -99,11 +108,24 @@ public class PohybHlHrdiny : MonoBehaviour
             FFA.ucaninter = false;
         }
 
+        //ESC
+        if(ESCAPE.triggered)
+        {
+            pauza = !pauza;
+            PauzaMenu(pauza);
+        }
 
         //dropped
-        if(transform.position.y <= -10F)
+        if(transform.position.y <= -10F || FFA.resetpozic)
         {
-            transform.position = StartLocation;
+            transform.position = FFA.StartPozice;
+            if(FFA.resetpozic)
+            {
+                FFA.resetpozic = false;
+                if(transform.position == FFA.StartPozice)
+                {
+                }
+            }
         }
         
     }
@@ -122,5 +144,25 @@ public class PohybHlHrdiny : MonoBehaviour
         {
             SceneManager.LoadScene(2, LoadSceneMode.Single);
         }
+    }
+
+    private void PauzaMenu(bool cs)
+    {
+        
+        if(cs)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            Pauza.gameObject.SetActive(true);
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            Pauza.gameObject.SetActive(false);
+            Time.timeScale = 1;
+        }
+        
     }
 }
