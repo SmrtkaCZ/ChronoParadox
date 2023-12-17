@@ -9,20 +9,12 @@ using UnityEngine.SceneManagement;
 public class OnKlik : MonoBehaviour
 {
     GameObject Panel;
-    public GameObject hrac;
     private void Start()
     {
-        if(SceneManager.GetActiveScene().buildIndex == 0)
+        if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             Panel = GameObject.FindGameObjectWithTag("Panel");
             Panel.gameObject.SetActive(false);
-        }
-    }
-    private void Update()
-    {
-        if(Time.timeScale == 0f&&hrac.transform.position == FFA.StartPozice && SceneManager.GetActiveScene().buildIndex >= 1)
-        {
-            Time.timeScale = 0f;
         }
     }
 
@@ -41,7 +33,7 @@ public class OnKlik : MonoBehaviour
     }
     public void ResetPozice()
     {
-        Time.timeScale = 1;
         FFA.reset = true;
+        Debug.Log(FFA.reset.ToString());
     }
 }
