@@ -1,3 +1,4 @@
+using Cinemachine;
 using System;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
@@ -26,6 +27,7 @@ public class PohybHlHrdiny : MonoBehaviour
 
     [Header("Objekty")]
     public Canvas Pauza;
+    public CinemachineVirtualCamera VC1;
 
     //values
     private CharacterController controller;
@@ -116,16 +118,18 @@ public class PohybHlHrdiny : MonoBehaviour
         }
 
         //dropped
-        if(transform.position.y <= -10F || FFA.resetpozic)
+        if(transform.position.y <= -10F)
         {
             transform.position = FFA.StartPozice;
-            if(FFA.resetpozic)
-            {
-                FFA.resetpozic = false;
-                if(transform.position == FFA.StartPozice)
-                {
-                }
-            }
+        }
+        if(FFA.reset)
+        {
+            FFA.reset = false;
+            Pauza.gameObject.SetActive(false);
+            //VC1.gameObject.SetActive(true);
+            transform.position = FFA.StartPozice;
+            //VC1.gameObject.SetActive(false);
+            Pauza.gameObject.SetActive(true);
         }
         
     }
@@ -151,6 +155,7 @@ public class PohybHlHrdiny : MonoBehaviour
         
         if(cs)
         {
+            VC1.gameObject.SetActive(false);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             Pauza.gameObject.SetActive(true);
@@ -158,6 +163,7 @@ public class PohybHlHrdiny : MonoBehaviour
         }
         else
         {
+            VC1.gameObject.SetActive(true);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             Pauza.gameObject.SetActive(false);

@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 24653790}
   - component: {fileID: 24653789}
   m_Layer: 0
-  m_Name: VC1-CharBack
+  m_Name: VC1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2270,6 +2270,7 @@ MonoBehaviour:
   doublejumpallowed: 0
   sprintallowed: 1
   Pauza: {fileID: 1981485815}
+  VC1: {fileID: 24653787}
 --- !u!114 &742036585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4680,6 +4681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94c4ed3225c020f43be73820355bf59c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hrac: {fileID: 742036578}
 --- !u!114 &1981485813
 MonoBehaviour:
   m_ObjectHideFlags: 0

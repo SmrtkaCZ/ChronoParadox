@@ -11,5 +11,5 @@ static class FFA
     public static bool ucaninter = false;
     public static bool pressedE = false;
     public static Vector3 StartPozice;
-    public static bool resetpozic = false;
+    public static bool reset;
 }
