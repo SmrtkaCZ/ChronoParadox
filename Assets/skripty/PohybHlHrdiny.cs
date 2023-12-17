@@ -122,15 +122,6 @@ public class PohybHlHrdiny : MonoBehaviour
         {
             transform.position = FFA.StartPozice;
         }
-        if(FFA.reset)
-        {
-            FFA.reset = false;
-            Pauza.gameObject.SetActive(false);
-            //VC1.gameObject.SetActive(true);
-            transform.position = FFA.StartPozice;
-            //VC1.gameObject.SetActive(false);
-            Pauza.gameObject.SetActive(true);
-        }
         
     }
     private void OnTriggerEnter(Collider other)
@@ -168,6 +159,12 @@ public class PohybHlHrdiny : MonoBehaviour
             Cursor.visible = false;
             Pauza.gameObject.SetActive(false);
             Time.timeScale = 1;
+            if (FFA.reset)
+            {
+                transform.position = FFA.StartPozice;
+                FFA.reset = false;
+                Debug.Log(transform.position);
+            }
         }
         
     }
