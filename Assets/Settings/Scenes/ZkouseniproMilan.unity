@@ -3203,7 +3203,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Reset of Position
+  m_text: 'Reset of Level
 
 '
   m_isRightToLeft: 0

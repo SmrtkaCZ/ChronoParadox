@@ -159,12 +159,12 @@ public class PohybHlHrdiny : MonoBehaviour
             Cursor.visible = false;
             Pauza.gameObject.SetActive(false);
             Time.timeScale = 1;
-            if (FFA.reset)
+            /*if (FFA.reset)
             {
                 transform.position = FFA.StartPozice;
                 FFA.reset = false;
                 Debug.Log(transform.position);
-            }
+            }*/
         }
         
     }

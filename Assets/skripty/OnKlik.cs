@@ -33,7 +33,8 @@ public class OnKlik : MonoBehaviour
     }
     public void ResetPozice()
     {
-        FFA.reset = true;
-        Debug.Log(FFA.reset.ToString());
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
+        /*FFA.reset = true;
+        Debug.Log(FFA.reset.ToString());*/
     }
 }
