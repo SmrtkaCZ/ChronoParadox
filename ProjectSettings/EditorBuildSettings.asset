@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Settings/Scenes/ZkouseniproMilan.unity
     guid: bd0de9d89d3ddee4b9bb5c5ce60559ad
   - enabled: 1
+    path: Assets/Settings/Scenes/NeonOffice.unity
+    guid: 6894c9c74c9bce14595e4b5d42e77499
+  - enabled: 1
     path: Assets/Settings/Scenes/NeonRUN.unity
     guid: fde5af3030c940643bb6c569a111b95e
   - enabled: 1

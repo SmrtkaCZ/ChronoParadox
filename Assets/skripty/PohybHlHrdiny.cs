@@ -1,10 +1,12 @@
 using Cinemachine;
 using System;
 using System.Runtime.CompilerServices;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(CharacterController),typeof(PlayerInput))]
 public class PohybHlHrdiny : MonoBehaviour
@@ -28,6 +30,9 @@ public class PohybHlHrdiny : MonoBehaviour
     [Header("Objekty")]
     public Canvas Pauza;
     public CinemachineVirtualCamera VC1;
+    public TMP_Text Leveling;
+    public TMP_Text Questing;
+
 
     //values
     private CharacterController controller;
@@ -37,6 +42,8 @@ public class PohybHlHrdiny : MonoBehaviour
     private Transform cameratrans;
     private float speed;
     private float jumpcount = 0;
+    private int quest = 0;
+    private int bodyvlevelu = 0;
 
 
     private InputAction moveaction;
@@ -62,7 +69,23 @@ public class PohybHlHrdiny : MonoBehaviour
         ESCAPE = playerInput.actions["ESC"];
 
         FFA.StartPozice = transform.position;
-        
+
+        if(SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            Leveling.text = "Level 1";
+            quest = 0;
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            Leveling.text = "Level 2";
+            quest = 3;
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            Leveling.text = "Level 2";
+            quest = 3;
+        }
+        QuestsChanger();
     }
 
     void Update()
@@ -128,8 +151,14 @@ public class PohybHlHrdiny : MonoBehaviour
     {
         if(other.gameObject.tag == "Point")
         {
-            FFA.body++;
+            bodyvlevelu++;
+            other.gameObject.transform.parent.gameObject.SetActive(false);
+        }
+        else if(other.gameObject.tag == "zmenaukolu")
+        {
+            quest++;
             other.gameObject.SetActive(false);
+            QuestsChanger();
         }
     }
 
@@ -137,6 +166,7 @@ public class PohybHlHrdiny : MonoBehaviour
     {
         if (collision.gameObject.tag == "PortalTutor")
         {
+            FFA.body += bodyvlevelu;
             SceneManager.LoadScene(2, LoadSceneMode.Single);
         }
     }
@@ -167,5 +197,24 @@ public class PohybHlHrdiny : MonoBehaviour
             }*/
         }
         
+    }
+    private void QuestsChanger()
+    {
+        switch(quest)
+        {
+            //Tutor
+            case 0:
+                Questing.text = "Use SpaceBar to jump across gap between platforms.";
+                break;
+            case 1:
+                Questing.text = "Use Shift to run to next platform.";
+                break;
+            case 2:
+                Questing.text = "Use E to push the button.";
+                break;
+            //Neon1
+            case 3:
+                break;
+        }
     }
 }

@@ -10,6 +10,8 @@ TagManager:
   - Tagprokamer
   - mizicizem
   - PortalTutor
+  - Door
+  - zmenaukolu
   layers:
   - Default
   - TransparentFX
