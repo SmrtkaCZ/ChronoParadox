@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class Interakce : MonoBehaviour
 {
+    public TMP_Text text;
     
     private bool ididit = true;
     private bool tohokohopotrebujisity = false;
@@ -23,8 +25,9 @@ public class Interakce : MonoBehaviour
         //allActions
         if (akce)
         {
+            text.gameObject.SetActive(false);
             //Tutor
-            if(gameObject.name == "Buttontofirstlevel")
+            if (gameObject.name == "Buttontofirstlevel")
             {
                 rych += rych * Time.deltaTime;
                 if (transform.position.y < 4.419F)
@@ -44,6 +47,10 @@ public class Interakce : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            if(ididit)
+            {
+                text.gameObject.SetActive(true);
+            }
             tohokohopotrebujisity = true;
             FFA.ucaninter = ididit;
         }
@@ -54,6 +61,7 @@ public class Interakce : MonoBehaviour
         {
             tohokohopotrebujisity = false;
             FFA.ucaninter = false;
+            text.gameObject.SetActive(false);
         }
     }
 }

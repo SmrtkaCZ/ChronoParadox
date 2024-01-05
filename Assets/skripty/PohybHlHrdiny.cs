@@ -28,7 +28,7 @@ public class PohybHlHrdiny : MonoBehaviour
     private bool sprintallowed = true;
 
     [Header("Objekty")]
-    public Canvas Pauza;
+    public GameObject Pauza;
     public CinemachineVirtualCamera VC1;
     public TMP_Text Leveling;
     public TMP_Text Questing;

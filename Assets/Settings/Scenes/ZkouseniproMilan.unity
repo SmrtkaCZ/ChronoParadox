@@ -3274,6 +3274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f4f928b2f0029b4b9e76c3469f6eeeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 7016058602503135553}
 --- !u!1 &1913764756
 GameObject:
   m_ObjectHideFlags: 0
@@ -3690,12 +3691,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70ceb3a14ec007e439e0cf8b9a6ab78c, type: 3}
---- !u!223 &1981485815 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 3726663656620634265, guid: a25a18bce5cb4a64483049f14be1c36e,
-    type: 3}
-  m_PrefabInstance: {fileID: 7016058602503135552}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2074084719 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1303999730344180778, guid: a25a18bce5cb4a64483049f14be1c36e,
@@ -3904,6 +3899,24 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a25a18bce5cb4a64483049f14be1c36e, type: 3}
+--- !u!114 &7016058602503135553 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7329269621107631876, guid: a25a18bce5cb4a64483049f14be1c36e,
+    type: 3}
+  m_PrefabInstance: {fileID: 7016058602503135552}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &7016058602503135554 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 177967284528980668, guid: a25a18bce5cb4a64483049f14be1c36e,
+    type: 3}
+  m_PrefabInstance: {fileID: 7016058602503135552}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9085342983824997159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3981,7 +3994,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Pauza
       value: 
-      objectReference: {fileID: 1981485815}
+      objectReference: {fileID: 7016058602503135554}
     - target: {fileID: 8820755553095007014, guid: 145e13f5c6cff184f846ffaaef6bb682,
         type: 3}
       propertyPath: Leveling
