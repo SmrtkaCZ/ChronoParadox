@@ -45,9 +45,10 @@ public class Autodelabrmbrm : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "CarDestroyer")
+        if (other.gameObject.tag == "CarDestroyer")
         {
             Destroy(gameObject);
         }
+
     }
 }

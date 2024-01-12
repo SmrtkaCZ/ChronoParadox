@@ -12,6 +12,9 @@ TagManager:
   - PortalTutor
   - Door
   - zmenaukolu
+  - car
+  - TimeTrav
+  - Lodmala
   layers:
   - Default
   - TransparentFX

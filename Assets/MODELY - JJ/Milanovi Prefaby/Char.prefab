@@ -333,6 +333,11 @@ MonoBehaviour:
   sprintallowed: 1
   Pauza: {fileID: 0}
   VC1: {fileID: 0}
+  Leveling: {fileID: 0}
+  Questing: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!143 &3352297619771507780
 CharacterController:
   m_ObjectHideFlags: 0

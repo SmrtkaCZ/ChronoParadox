@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Interakce : MonoBehaviour
 {
@@ -41,6 +42,11 @@ public class Interakce : MonoBehaviour
                 }
             }
             //neon(1)
+            else if(gameObject.name == "Car")
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+                akce = false;
+            }
         }
     }
     private void OnTriggerEnter(Collider other)

@@ -1,6 +1,7 @@
 using Cinemachine;
 using System;
 using System.Runtime.CompilerServices;
+using System.Threading;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -32,6 +33,7 @@ public class PohybHlHrdiny : MonoBehaviour
     public CinemachineVirtualCamera VC1;
     public TMP_Text Leveling;
     public TMP_Text Questing;
+    public LayerMask groundLayer;
 
 
     //values
@@ -44,7 +46,9 @@ public class PohybHlHrdiny : MonoBehaviour
     private float jumpcount = 0;
     private int quest = 0;
     private int bodyvlevelu = 0;
+    private bool resetpoz = false;
 
+    private Vector3 Cam;
 
     private InputAction moveaction;
     private InputAction jumpaction;
@@ -69,6 +73,8 @@ public class PohybHlHrdiny : MonoBehaviour
         ESCAPE = playerInput.actions["ESC"];
 
         FFA.StartPozice = transform.position;
+        Cam = VC1.gameObject.transform.position;
+
 
         if(SceneManager.GetActiveScene().buildIndex == 1)
         {
@@ -83,11 +89,45 @@ public class PohybHlHrdiny : MonoBehaviour
         else if (SceneManager.GetActiveScene().buildIndex == 3)
         {
             Leveling.text = "Level 2";
+            quest = 5;
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            Leveling.text = "Level 3";
+            quest = 3;
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            Leveling.text = "Level 4";
+            quest = 3;
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 6)
+        {
+            Leveling.text = "Level 5";
+            quest = 3;
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 7)
+        {
+            Leveling.text = "Level 6";
+            quest = 3;
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 6)
+        {
+            Leveling.text = "Level 7";
+            quest = 3;
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            Leveling.text = "Level 8";
+            quest = 3;
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            Leveling.text = "Level 8";
             quest = 3;
         }
         QuestsChanger();
     }
-
     void Update()
     {
         groundedPlayer = controller.isGrounded;
@@ -96,31 +136,33 @@ public class PohybHlHrdiny : MonoBehaviour
             jumpcount = 0;
             playerVelocity.y = 0f;
         }
-
-        Vector2 input = moveaction.ReadValue<Vector2>();
-        Vector3 move = new Vector3(input.x, 0, input.y);
-        move = move.x * cameratrans.right.normalized + move.z * cameratrans.forward.normalized;
-        move.y = 0f;
-        //sprint
-        if(sprintaction.ReadValue<float>() > 0 && sprintallowed)
+        if(FFA.move)
         {
-            speed = playerSpeed * 2f;
-        }
-        else
-        {
-            speed = playerSpeed;
-        }
-        controller.Move(move * Time.deltaTime * speed);
+            Vector2 input = moveaction.ReadValue<Vector2>();
+            Vector3 move = new Vector3(input.x, 0, input.y);
+            move = move.x * cameratrans.right.normalized + move.z * cameratrans.forward.normalized;
+            move.y = 0f;
+            //sprint
+            if(sprintaction.ReadValue<float>() > 0 && sprintallowed)
+            {
+                speed = playerSpeed * 2f;
+            }
+            else
+            {
+                speed = playerSpeed;
+            }
+            controller.Move(move * Time.deltaTime * speed);
 
-        // Jump
-        if (jumpaction.triggered && groundedPlayer || jumpaction.triggered && jumpcount == 1 && doublejumpallowed)
-        {
-            jumpcount++;
-            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
-        }
+            // Jump
+            if (jumpaction.triggered && CheckGrounded() || jumpaction.triggered && jumpcount == 1 && doublejumpallowed)
+            {
+                jumpcount++;
+                playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+            }
 
-        playerVelocity.y += gravityValue * Time.deltaTime;
-        controller.Move(playerVelocity * Time.deltaTime);
+            playerVelocity.y += gravityValue * Time.deltaTime;
+            controller.Move(playerVelocity * Time.deltaTime);
+        }
 
 
         Quaternion rotation = Quaternion.Euler(0, cameratrans.eulerAngles.y, 0);
@@ -141,9 +183,17 @@ public class PohybHlHrdiny : MonoBehaviour
         }
 
         //dropped
-        if(transform.position.y <= -10F)
+        if(transform.position == FFA.StartPozice && VC1.Follow != null)
         {
+            resetpoz = false;
+        }
+        if(transform.position.y <= -10F || resetpoz)
+        {
+            VC1.Follow = null;
+            VC1.LookAt = null;
             transform.position = FFA.StartPozice;
+            VC1.Follow = transform;
+            VC1.LookAt = transform;
         }
         
     }
@@ -160,6 +210,9 @@ public class PohybHlHrdiny : MonoBehaviour
             other.gameObject.SetActive(false);
             QuestsChanger();
         }
+        
+        
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -169,6 +222,15 @@ public class PohybHlHrdiny : MonoBehaviour
             FFA.body += bodyvlevelu;
             SceneManager.LoadScene(2, LoadSceneMode.Single);
         }
+        else if (collision.gameObject.tag == "car")
+        {
+            resetpoz = true;
+        }
+        else if (collision.gameObject.tag == "Lodmala")
+        {
+            gameObject.transform.parent = collision.gameObject.transform;
+        }
+        
     }
 
     private void PauzaMenu(bool cs)
@@ -214,7 +276,78 @@ public class PohybHlHrdiny : MonoBehaviour
                 break;
             //Neon1
             case 3:
+                Questing.text = "Find a Key.";
+                break;
+            case 4:
+                Questing.text = "Get out of building.";
+                break;
+            case 5:
+                Questing.text = "Find your time transporter and press E.";
+                break;
+            //Pir1
+            case 6:
+                Questing.text = "Use E to push the button.";
+                break;
+            case 7:
+                Questing.text = "Use E to push the button.";
+                break;
+            case 8:
+                Questing.text = "Use E to push the button.";
+                break;
+            //Pir2
+            case 9:
+                Questing.text = "Use E to push the button.";
+                break;
+            case 10:
+                Questing.text = "Use E to push the button.";
+                break;
+            case 11:
+                Questing.text = "Use E to push the button.";
+                break;
+            //Ves1
+            case 12:
+                Questing.text = "Use E to push the button.";
+                break;
+            case 13:
+                Questing.text = "Use E to push the button.";
+                break;
+            case 14:
+                Questing.text = "Use E to push the button.";
+                break;
+            //Les
+            case 15:
+                Questing.text = "Use E to push the button.";
+                break;
+            case 16:
+                Questing.text = "Use E to push the button.";
+                break;
+            case 17:
+                Questing.text = "Use E to push the button.";
+                break;
+            //Ves2
+            case 18:
+                Questing.text = "Use E to push the button.";
+                break;
+            case 19:
+                Questing.text = "Use E to push the button.";
+                break;
+            case 20:
+                Questing.text = "Use E to push the button.";
+                break;
+            //Neon2
+            case 21:
+                Questing.text = "Use E to push the button.";
+                break;
+            case 22:
+                Questing.text = "Use E to push the button.";
+                break;
+            case 23:
+                Questing.text = "Use E to push the button.";
                 break;
         }
+    }
+    bool CheckGrounded()
+    {
+        return Physics.SphereCast(transform.position, GetComponent<SphereCollider>().radius, Vector3.down, out _, GetComponent<SphereCollider>().radius * 0.5f + 0.1f, groundLayer);
     }
 }
