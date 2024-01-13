@@ -278,70 +278,70 @@ public class PohybHlHrdiny : MonoBehaviour
                 Questing.text = "Find a Key.";
                 break;
             case 4:
-                Questing.text = "Get out of building.";
+                Questing.text = "Get out of office.";
                 break;
             case 5:
                 Questing.text = "Find your time transporter and press E.";
                 break;
             //Pir1
             case 6:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "Get on second Island.";
                 break;
             case 7:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "Get on Pirats boat.";
                 break;
             case 8:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "Take the item you want.";
                 break;
             //Pir2
             case 9:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "You need to get on second Island.";
                 break;
             case 10:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "Jump across boxes.";
                 break;
             case 11:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "Get the hell out of here with your car.";
                 break;
             //Ves1
             case 12:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "Try to talk with villigers.";
                 break;
             case 13:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "Now go ask the Guy who have horses in charge.";
                 break;
             case 14:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "Take the unique horse and go to the forest";
                 break;
             //Les
             case 15:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "Sreach the Forest.";
                 break;
             case 16:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "You see the item you need take it.";
                 break;
             case 17:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "Now go back to your horse.";
                 break;
             //Ves2
             case 18:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "Find out who stole your car.";
                 break;
             case 19:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "Give him what he want.";
                 break;
             case 20:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "Go to your car.";
                 break;
             //Neon2
             case 21:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "Go to office and show to your boss the items you found in past.";
                 break;
             case 22:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "You got the money go and buy Game you want.";
                 break;
             case 23:
-                Questing.text = "Use E to push the button.";
+                Questing.text = "Press E and start playing.";
                 break;
         }
     }
