@@ -229,6 +229,10 @@ public class PohybHlHrdiny : MonoBehaviour
         {
             gameObject.transform.parent = collision.gameObject.transform;
         }
+        else if(collision.gameObject.tag =="sea")
+        {
+            resetpoz = true;
+        }
         
     }
 
