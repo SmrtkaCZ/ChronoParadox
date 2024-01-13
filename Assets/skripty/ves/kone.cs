@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class kone : MonoBehaviour
 {
-    private float plus = 3f;
+    private float plus;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,14 +14,14 @@ public class kone : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.transform.rotation.eulerAngles.x >= 315&&plus>0)
+        if(gameObject.transform.rotation.eulerAngles.x >= 315f)
         {
-            plus *= -1;
+            plus = 260;
         }
-        else if (gameObject.transform.rotation.eulerAngles.x <= 260&&plus < 0)
+        else if (gameObject.transform.rotation.eulerAngles.x <= 260f)
         {
-            plus *= -1;
+            plus = 315;
         }
-        transform.eulerAngles = new Vector3(transform.eulerAngles.x+plus*Time.deltaTime, transform.eulerAngles.y, transform.eulerAngles.z);
+        transform.rotation = Quaternion.Euler(plus, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
     }
 }
