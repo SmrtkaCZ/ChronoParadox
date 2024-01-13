@@ -20,6 +20,7 @@ TagManager:
   - vesnican
   - zakonem
   - text
+  - zakonem2
   layers:
   - Default
   - TransparentFX

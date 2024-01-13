@@ -90,6 +90,7 @@ public class Interakce : MonoBehaviour
             //neon(1)
             else if(gameObject.name == "Car"||gameObject.name == "mince"|| gameObject.name == "Carves" && FFA.Neviltalk1)
             {
+                FFA.body += FFA.bodyvlevelu;
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
                 akce = false;
             }
@@ -217,6 +218,12 @@ public class Interakce : MonoBehaviour
                 ididit = true;
                 akce = false;
             }
+            else if(gameObject.name == "Vaza")
+            {
+                FFA.questy++;
+                FFA.do7 = true;
+                gameObject.SetActive(false);
+            }
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -238,7 +245,10 @@ public class Interakce : MonoBehaviour
             tohokohopotrebujisity = false;
             FFA.ucaninter = false;
             text.gameObject.SetActive(false);
-            Dialog.gameObject.SetActive(false);
+            if (SceneManager.GetActiveScene().buildIndex == 6 || SceneManager.GetActiveScene().buildIndex == 8)
+            {
+                Dialog.gameObject.SetActive(false);
+            }
         }
     }
 }

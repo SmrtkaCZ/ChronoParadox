@@ -23,4 +23,7 @@ static class FFA
     public static bool Adolftalk2 = false;
     public static bool Edvardtalk1 = false;
     public static bool Neviltalk1 = false;
+
+    public static int bodyvlevelu = 0;
+    public static bool do7 = false;
 }

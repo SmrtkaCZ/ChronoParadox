@@ -44,7 +44,6 @@ public class PohybHlHrdiny : MonoBehaviour
     private Transform cameratrans;
     private float speed;
     private float jumpcount = 0;
-    private int bodyvlevelu = 0;
     private bool resetpoz = false;
 
     private Vector3 Cam;
@@ -74,7 +73,7 @@ public class PohybHlHrdiny : MonoBehaviour
         FFA.StartPozice = transform.position;
         Cam = VC1.gameObject.transform.position;
 
-
+        FFA.bodyvlevelu = 0;
         if(SceneManager.GetActiveScene().buildIndex == 1)
         {
             Leveling.text = "Level 1";
@@ -103,6 +102,7 @@ public class PohybHlHrdiny : MonoBehaviour
         else if (SceneManager.GetActiveScene().buildIndex == 6)
         {
             Leveling.text = "Level 5";
+            FFA.do7 = false;
             FFA.questy = 12;
         }
         else if (SceneManager.GetActiveScene().buildIndex == 7)
@@ -207,7 +207,7 @@ public class PohybHlHrdiny : MonoBehaviour
     {
         if(other.gameObject.tag == "Point")
         {
-            bodyvlevelu++;
+            FFA.bodyvlevelu++;
             other.gameObject.transform.parent.gameObject.SetActive(false);
         }
         else if(other.gameObject.tag == "zmenaukolu")
@@ -218,17 +218,23 @@ public class PohybHlHrdiny : MonoBehaviour
         }
         else if (other.gameObject.tag =="zakonem" && FFA.Edvardtalk1)
         {
+            FFA.body += FFA.bodyvlevelu;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
         }
-        
-        
+        else if (other.gameObject.tag == "zakonem2" && FFA.do7)
+        {
+            FFA.body += FFA.bodyvlevelu;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+        }
+
+
 
     }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "PortalTutor")
         {
-            FFA.body += bodyvlevelu;
+            FFA.body += FFA.bodyvlevelu;
             SceneManager.LoadScene(2, LoadSceneMode.Single);
         }
         else if (collision.gameObject.tag == "car")
