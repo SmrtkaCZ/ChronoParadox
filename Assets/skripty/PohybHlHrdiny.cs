@@ -236,10 +236,23 @@ public class PohybHlHrdiny : MonoBehaviour
         else if(collision.gameObject.tag =="sea")
         {
             resetpoz = true;
+            GameObject[] Lode = GameObject.FindGameObjectsWithTag("Lodmala");
+            for(int i = 0; i < Lode.Length; i++)
+            {
+                if(Lode[i].name == "Lod_player")
+                {
+                    Lode[i].transform.position = new Vector3(81.19f, 1.943f, 16.36f);
+                    Lode[i].transform.rotation = Quaternion.LookRotation(Vector3.right);
+                }
+                else
+                {
+                    Lode[i].transform.position = new Vector3(76.03f, 1.943f, 111.25f);
+                    Lode[i].transform.rotation = Quaternion.LookRotation(Vector3.forward);
+                }
+            }
         }
-        
+        questsChanger();
     }
-
     private void PauzaMenu(bool cs)
     {
         
@@ -303,7 +316,7 @@ public class PohybHlHrdiny : MonoBehaviour
                 break;
             //Pir2
             case 9:
-                questing.text = "You need to get on second Island.";
+                questing.text = "Find something you can use to get on second island";
                 break;
             case 10:
                 questing.text = "Jump across boxes.";

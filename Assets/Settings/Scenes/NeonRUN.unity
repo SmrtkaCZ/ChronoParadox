@@ -2506,6 +2506,11 @@ PrefabInstance:
       objectReference: {fileID: 1754581267}
     - target: {fileID: 8820755553095007014, guid: 145e13f5c6cff184f846ffaaef6bb682,
         type: 3}
+      propertyPath: questing
+      value: 
+      objectReference: {fileID: 1754581267}
+    - target: {fileID: 8820755553095007014, guid: 145e13f5c6cff184f846ffaaef6bb682,
+        type: 3}
       propertyPath: jumpHeight
       value: 4
       objectReference: {fileID: 0}

@@ -67,7 +67,9 @@ public class Interakce : MonoBehaviour
                 {
                     krab[i].gameObject.SetActive(true);
                 }
+                FFA.questy++;
                 gameObject.SetActive(false);
+
                 
             }
         }
