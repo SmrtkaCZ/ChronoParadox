@@ -14,7 +14,19 @@ public class Interakce : MonoBehaviour
     private bool tohokohopotrebujisity = false;
     private bool akce = false;
     private float rych = 0.01f;
+    GameObject[] krab;
     // Start is called before the first frame update
+    private void Start()
+    {
+        if(SceneManager.GetActiveScene().buildIndex == 5 && gameObject.name == "krabice venku")
+        {
+            krab = GameObject.FindGameObjectsWithTag("krabice");
+            for (int i = 0; i < krab.Length; i++)
+            {
+                krab[i].gameObject.SetActive(false);
+            }
+        }
+    }
     private void Update()
     {
         if(FFA.pressedE && tohokohopotrebujisity)
@@ -51,8 +63,7 @@ public class Interakce : MonoBehaviour
             //pirati (2)
             else if (gameObject.name == "krabice venku")
             {
-                GameObject[] krab = GameObject.FindGameObjectsWithTag("krabice");
-                for(int i = 0; i < krab.Length - 1; i++)
+                for(int i = 0; i < krab.Length; i++)
                 {
                     krab[i].gameObject.SetActive(true);
                 }

@@ -7,7 +7,12 @@ public class zemmizi : MonoBehaviour
     private float yourDadsspeedwhenhefindoutaboutu = 0.005F;
     private float rych = 0;
     private bool zmiz = false;
+    private Vector3 stpoz;
     // Update is called once per frame
+    private void Start()
+    {
+        stpoz = transform.position;
+    }
     void Update()
     {
         if (zmiz)
@@ -15,7 +20,7 @@ public class zemmizi : MonoBehaviour
             if(transform.position.y <= -10F)
             {
                 zmiz = false;
-                transform.position = new Vector3(transform.position.x, 0F, transform.position.z);
+                transform.position = stpoz;
                 rych = 0;
             }
             rych += yourDadsspeedwhenhefindoutaboutu * Time.deltaTime;
