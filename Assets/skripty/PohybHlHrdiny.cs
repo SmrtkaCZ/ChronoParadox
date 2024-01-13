@@ -109,8 +109,15 @@ public class PohybHlHrdiny : MonoBehaviour
         {
             Leveling.text = "Level 6";
             FFA.questy = 15;
+            FFA.V1 = false;
+            FFA.V2 = false;
+            FFA.V3 = false;
+            FFA.V4 = false;
+            FFA.Adolftalk1 = false;
+            FFA.Edvardtalk1 = false;
+
         }
-        else if (SceneManager.GetActiveScene().buildIndex == 6)
+        else if (SceneManager.GetActiveScene().buildIndex == 8)
         {
             Leveling.text = "Level 7";
             FFA.questy = 18;
@@ -208,6 +215,10 @@ public class PohybHlHrdiny : MonoBehaviour
             FFA.questy++;
             other.gameObject.SetActive(false);
             questsChanger();
+        }
+        else if (other.gameObject.tag =="zakonem"&&FFA.Edvardtalk1)
+        {
+            SceneManager.LoadScene(7, LoadSceneMode.Single);
         }
         
         

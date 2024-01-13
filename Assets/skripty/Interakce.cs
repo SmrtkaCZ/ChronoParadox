@@ -14,9 +14,9 @@ public class Interakce : MonoBehaviour
     private bool ididit = true;
     private bool tohokohopotrebujisity = false;
     private bool akce = false;
-    private bool Adolftalk1 = false;
-    private bool Adolftalk2 = false;
-    private bool Edvardtalk3 = false;
+    
+
+    
     private float rych = 0.01f;
     GameObject[] krab;
     GameObject Dialog;
@@ -34,7 +34,24 @@ public class Interakce : MonoBehaviour
         else if (SceneManager.GetActiveScene().buildIndex == 6)
         {
             Dialog = GameObject.Find("Texting");
-            if(gameObject.name == "V3")
+            if(gameObject.name == "V")
+            {
+                FFA.V1 = true;
+            }
+            else if (gameObject.name == "V1")
+            {
+                FFA.V2 = true;
+            }
+            else if(gameObject.name == "V2")
+            {
+                FFA.V3 = true;
+            }
+            else if(gameObject.name == "V3")
+            {
+                FFA.V4 = true;
+            }
+
+            if(FFA.V1&&FFA.V2&&FFA.V3&&FFA.V4)
             {
                 Dialog.SetActive(false);
             }
@@ -100,14 +117,14 @@ public class Interakce : MonoBehaviour
                     }
                     else if (gameObject.name == "V1")
                     {
-                        if(Adolftalk1)
+                        if(FFA.Adolftalk1)
                         {
                             Dilaogovytext.text =
                                 "Edvard: \n" +
                                 "Vítej v Mnichovì.\n " +
                                 "Konì toho ti musím pùjèit, když to øíka Adolf.";
                             FFA.questy++;
-                            Edvardtalk3 = true;
+                            FFA.Edvardtalk1 = true;
                         }
                         else
                         {
@@ -130,8 +147,11 @@ public class Interakce : MonoBehaviour
                             "Adolf: \n" +
                             "Vítej v Mnichovì.\n " +
                             "Vidím, že hledáš konì zajdi az Evardem ten ti jistì nejákého pùjèí.";
-                        FFA.questy++;
-                        Adolftalk1 = true;
+                        if(!FFA.Adolftalk1)
+                        {
+                            FFA.Adolftalk1 = true;
+                            FFA.questy++;
+                        }
                     } 
                 }
                 else

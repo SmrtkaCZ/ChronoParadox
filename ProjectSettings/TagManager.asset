@@ -18,6 +18,7 @@ TagManager:
   - sea
   - krabice
   - vesnican
+  - zakonem
   layers:
   - Default
   - TransparentFX

@@ -13,5 +13,13 @@ static class FFA
     public static Vector3 StartPozice;
     public static bool move = true;
     public static int questy;
-    //public static bool reset;
+
+    public static bool V1 = false;
+    public static bool V2 = false;
+    public static bool V3 = false;
+    public static bool V4 = false;
+
+    public static bool Adolftalk1 = false;
+    //private static bool Adolftalk2 = false;
+    public static bool Edvardtalk1 = false;
 }
