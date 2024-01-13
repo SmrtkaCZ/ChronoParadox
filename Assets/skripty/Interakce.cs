@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Interakce : MonoBehaviour
 {
@@ -13,8 +14,12 @@ public class Interakce : MonoBehaviour
     private bool ididit = true;
     private bool tohokohopotrebujisity = false;
     private bool akce = false;
+    private bool Adolftalk1 = false;
+    private bool Adolftalk2 = false;
+    private bool Edvardtalk3 = false;
     private float rych = 0.01f;
     GameObject[] krab;
+    GameObject Dialog;
     // Start is called before the first frame update
     private void Start()
     {
@@ -24,6 +29,14 @@ public class Interakce : MonoBehaviour
             for (int i = 0; i < krab.Length; i++)
             {
                 krab[i].gameObject.SetActive(false);
+            }
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 6)
+        {
+            Dialog = GameObject.Find("Texting");
+            if(gameObject.name == "V3")
+            {
+                Dialog.SetActive(false);
             }
         }
     }
@@ -69,8 +82,92 @@ public class Interakce : MonoBehaviour
                 }
                 FFA.questy++;
                 gameObject.SetActive(false);
+                akce = false;
 
-                
+            }
+            else if(gameObject.tag == "vesnican")
+            {
+                Dialog.gameObject.SetActive(true);
+                TMP_Text Dilaogovytext = GameObject.Find("Text").GetComponent<TMP_Text>();
+                if (SceneManager.GetActiveScene().buildIndex == 6)
+                {
+                    if (gameObject.name == "V0")
+                    {
+                        Dilaogovytext.text =
+                            "Benito: \n" +
+                            "Vítej v Mnichovì.\n " +
+                            "Hitler je mùj velký kamarád.";
+                    }
+                    else if (gameObject.name == "V1")
+                    {
+                        if(Adolftalk1)
+                        {
+                            Dilaogovytext.text =
+                                "Edvard: \n" +
+                                "Vítej v Mnichovì.\n " +
+                                "Konì toho ti musím pùjèit, když to øíka Adolf.";
+                            FFA.questy++;
+                            Edvardtalk3 = true;
+                        }
+                        else
+                        {
+                            Dilaogovytext.text =
+                                "Edvard: \n" +
+                                "Vítej v Mnichovì.\n " +
+                                "Videl jsem nìco zvláštního v horách.";
+                        }
+                    }
+                    else if (gameObject.name == "V2")
+                    {
+                        Dilaogovytext.text =
+                            "Nevil: \n" +
+                            "Vítej v Mnichovì.\n " +
+                            "Jo mít moc je super vìc.";
+                    }
+                    else if (gameObject.name == "V3")
+                    {
+                        Dilaogovytext.text =
+                            "Adolf: \n" +
+                            "Vítej v Mnichovì.\n " +
+                            "Vidím, že hledáš konì zajdi az Evardem ten ti jistì nejákého pùjèí.";
+                        FFA.questy++;
+                        Adolftalk1 = true;
+                    } 
+                }
+                else
+                {
+                    if (gameObject.name == "V0")
+                    {
+                        Dilaogovytext.text =
+                            "Benito: \n" +
+                            "Vítej v Mnichovì.\n " +
+                            "Hitler je mùj velký kamarád.";
+                    }
+                    else if (gameObject.name == "V1")
+                    {
+                        Dilaogovytext.text =
+                            "Edvard: \n" +
+                            "Vítej v Mnichovì.\n " +
+                            "Konì mí koòové.";
+                    }
+                    else if (gameObject.name == "V2")
+                    {
+                        Dilaogovytext.text =
+                            "Nevil: \n" +
+                            "Vítej v Mnichovì.\n " +
+                            "Jo mít moc je super vìc.";
+                    }
+                    else if (gameObject.name == "V3")
+                    {
+                        Dilaogovytext.text =
+                            "Adolf: \n" +
+                            "Vítej v Mnichovì.\n " +
+                            "Vidím, že hledáš konì zajdi az Evardem ten ti jistì nejákého pùjèí.";
+                    }
+                }
+
+                ididit = true;
+                akce = false;
             }
         }
     }
@@ -93,6 +190,7 @@ public class Interakce : MonoBehaviour
             tohokohopotrebujisity = false;
             FFA.ucaninter = false;
             text.gameObject.SetActive(false);
+            Dialog.gameObject.SetActive(false);
         }
     }
 }

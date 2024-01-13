@@ -326,10 +326,10 @@ public class PohybHlHrdiny : MonoBehaviour
                 break;
             //Ves1
             case 12:
-                questing.text = "Try to talk with villigers.";
+                questing.text = "Find Adolf and talk to him.";
                 break;
             case 13:
-                questing.text = "Now go ask the Guy who have horses in charge.";
+                questing.text = "Find Edvard and talk to him.";
                 break;
             case 14:
                 questing.text = "Take the unique horse and go to the forest";
