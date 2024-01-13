@@ -12,5 +12,6 @@ static class FFA
     public static bool pressedE = false;
     public static Vector3 StartPozice;
     public static bool move = true;
+    public static int questy;
     //public static bool reset;
 }

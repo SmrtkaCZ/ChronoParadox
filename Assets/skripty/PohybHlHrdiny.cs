@@ -32,7 +32,7 @@ public class PohybHlHrdiny : MonoBehaviour
     public GameObject Pauza;
     public CinemachineVirtualCamera VC1;
     public TMP_Text Leveling;
-    public TMP_Text Questing;
+    public TMP_Text questing;
     public LayerMask groundLayer;
 
 
@@ -44,7 +44,6 @@ public class PohybHlHrdiny : MonoBehaviour
     private Transform cameratrans;
     private float speed;
     private float jumpcount = 0;
-    private int quest = 0;
     private int bodyvlevelu = 0;
     private bool resetpoz = false;
 
@@ -79,54 +78,54 @@ public class PohybHlHrdiny : MonoBehaviour
         if(SceneManager.GetActiveScene().buildIndex == 1)
         {
             Leveling.text = "Level 1";
-            quest = 0;
+            FFA.questy = 0;
         }
         else if (SceneManager.GetActiveScene().buildIndex == 2)
         {
             Leveling.text = "Level 2";
-            quest = 3;
+            FFA.questy = 3;
         }
         else if (SceneManager.GetActiveScene().buildIndex == 3)
         {
             Leveling.text = "Level 2";
-            quest = 5;
+            FFA.questy = 5;
         }
         else if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             Leveling.text = "Level 3";
-            quest = 3;
+            FFA.questy = 6;
         }
         else if (SceneManager.GetActiveScene().buildIndex == 5)
         {
             Leveling.text = "Level 4";
-            quest = 3;
+            FFA.questy = 9;
         }
         else if (SceneManager.GetActiveScene().buildIndex == 6)
         {
             Leveling.text = "Level 5";
-            quest = 3;
+            FFA.questy = 12;
         }
         else if (SceneManager.GetActiveScene().buildIndex == 7)
         {
             Leveling.text = "Level 6";
-            quest = 3;
+            FFA.questy = 15;
         }
         else if (SceneManager.GetActiveScene().buildIndex == 6)
         {
             Leveling.text = "Level 7";
-            quest = 3;
+            FFA.questy = 18;
         }
         else if (SceneManager.GetActiveScene().buildIndex == 2)
         {
             Leveling.text = "Level 8";
-            quest = 3;
+            FFA.questy = 21;
         }
         else if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             Leveling.text = "Level 8";
-            quest = 3;
+            FFA.questy = 21;
         }
-        QuestsChanger();
+        questsChanger();
     }
     void Update()
     {
@@ -206,9 +205,9 @@ public class PohybHlHrdiny : MonoBehaviour
         }
         else if(other.gameObject.tag == "zmenaukolu")
         {
-            quest++;
+            FFA.questy++;
             other.gameObject.SetActive(false);
-            QuestsChanger();
+            questsChanger();
         }
         
         
@@ -228,6 +227,11 @@ public class PohybHlHrdiny : MonoBehaviour
         else if (collision.gameObject.tag == "Lodmala")
         {
             gameObject.transform.parent = collision.gameObject.transform;
+            if(FFA.questy == 6)
+            {
+                FFA.questy = 7;
+                questsChanger();
+            }
         }
         else if(collision.gameObject.tag =="sea")
         {
@@ -263,89 +267,89 @@ public class PohybHlHrdiny : MonoBehaviour
         }
         
     }
-    private void QuestsChanger()
+    private void questsChanger()
     {
-        switch(quest)
+        switch(FFA.questy)
         {
             //Tutor
             case 0:
-                Questing.text = "Use SpaceBar to jump across gap between platforms.";
+                questing.text = "Use SpaceBar to jump across gap between platforms.";
                 break;
             case 1:
-                Questing.text = "Use Shift to run to next platform.";
+                questing.text = "Use Shift to run to next platform.";
                 break;
             case 2:
-                Questing.text = "Use E to push the button.";
+                questing.text = "Use E to push the button.";
                 break;
             //Neon1
             case 3:
-                Questing.text = "Find a Key.";
+                questing.text = "Find a Key.";
                 break;
             case 4:
-                Questing.text = "Get out of office.";
+                questing.text = "Get out of office.";
                 break;
             case 5:
-                Questing.text = "Find your time transporter and press E.";
+                questing.text = "Find your time transporter and press E.";
                 break;
             //Pir1
             case 6:
-                Questing.text = "Get on second Island.";
+                questing.text = "Get on second Island.";
                 break;
             case 7:
-                Questing.text = "Get on Pirats boat.";
+                questing.text = "Get on Pirats boat.";
                 break;
             case 8:
-                Questing.text = "Take the item you want.";
+                questing.text = "Take the item you want.";
                 break;
             //Pir2
             case 9:
-                Questing.text = "You need to get on second Island.";
+                questing.text = "You need to get on second Island.";
                 break;
             case 10:
-                Questing.text = "Jump across boxes.";
+                questing.text = "Jump across boxes.";
                 break;
             case 11:
-                Questing.text = "Get the hell out of here with your car.";
+                questing.text = "Get the hell out of here with your car.";
                 break;
             //Ves1
             case 12:
-                Questing.text = "Try to talk with villigers.";
+                questing.text = "Try to talk with villigers.";
                 break;
             case 13:
-                Questing.text = "Now go ask the Guy who have horses in charge.";
+                questing.text = "Now go ask the Guy who have horses in charge.";
                 break;
             case 14:
-                Questing.text = "Take the unique horse and go to the forest";
+                questing.text = "Take the unique horse and go to the forest";
                 break;
             //Les
             case 15:
-                Questing.text = "Sreach the Forest.";
+                questing.text = "Sreach the Forest.";
                 break;
             case 16:
-                Questing.text = "You see the item you need take it.";
+                questing.text = "You see the item you need take it.";
                 break;
             case 17:
-                Questing.text = "Now go back to your horse.";
+                questing.text = "Now go back to your horse.";
                 break;
             //Ves2
             case 18:
-                Questing.text = "Find out who stole your car.";
+                questing.text = "Find out who stole your car.";
                 break;
             case 19:
-                Questing.text = "Give him what he want.";
+                questing.text = "Give him what he want.";
                 break;
             case 20:
-                Questing.text = "Go to your car.";
+                questing.text = "Go to your car.";
                 break;
             //Neon2
             case 21:
-                Questing.text = "Go to office and show to your boss the items you found in past.";
+                questing.text = "Go to office and show to your boss the items you found in past.";
                 break;
             case 22:
-                Questing.text = "You got the money go and buy Game you want.";
+                questing.text = "You got the money go and buy Game you want.";
                 break;
             case 23:
-                Questing.text = "Press E and start playing.";
+                questing.text = "Press E and start playing.";
                 break;
         }
     }

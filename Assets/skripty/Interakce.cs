@@ -55,7 +55,7 @@ public class Interakce : MonoBehaviour
                 }
             }
             //neon(1)
-            else if(gameObject.name == "Car")
+            else if(gameObject.name == "Car"||gameObject.name == "mince")
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
                 akce = false;

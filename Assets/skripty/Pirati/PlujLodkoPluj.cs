@@ -14,11 +14,6 @@ public class PlujLodkoPluj : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.name == "Lod_player (1)")
-        {
-            Debug.Log("ME");
-        }
-
         if(transform.childCount > 0)
         {
 
