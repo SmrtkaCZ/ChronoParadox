@@ -19,6 +19,7 @@ TagManager:
   - krabice
   - vesnican
   - zakonem
+  - text
   layers:
   - Default
   - TransparentFX

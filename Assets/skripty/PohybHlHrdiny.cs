@@ -216,9 +216,9 @@ public class PohybHlHrdiny : MonoBehaviour
             other.gameObject.SetActive(false);
             questsChanger();
         }
-        else if (other.gameObject.tag =="zakonem"&&FFA.Edvardtalk1)
+        else if (other.gameObject.tag =="zakonem" && FFA.Edvardtalk1)
         {
-            SceneManager.LoadScene(7, LoadSceneMode.Single);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
         }
         
         
@@ -357,10 +357,10 @@ public class PohybHlHrdiny : MonoBehaviour
                 break;
             //Ves2
             case 18:
-                questing.text = "Find out who stole your car.";
+                questing.text = "Find Adolf and talk to him.";
                 break;
             case 19:
-                questing.text = "Give him what he want.";
+                questing.text = "Find Nevil and talk to him.";
                 break;
             case 20:
                 questing.text = "Go to your car.";
