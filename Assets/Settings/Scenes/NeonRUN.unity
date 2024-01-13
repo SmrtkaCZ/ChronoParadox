@@ -2474,6 +2474,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3628032748123070482, guid: 145e13f5c6cff184f846ffaaef6bb682,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5564508488260461342, guid: 145e13f5c6cff184f846ffaaef6bb682,
         type: 3}
       propertyPath: m_Name
@@ -2512,7 +2517,7 @@ PrefabInstance:
     - target: {fileID: 8820755553095007014, guid: 145e13f5c6cff184f846ffaaef6bb682,
         type: 3}
       propertyPath: groundLayer.m_Bits
-      value: 4294967295
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4446,6 +4451,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Tagprokamer
       objectReference: {fileID: 0}
+    - target: {fileID: 1697560883353498901, guid: d313316b9ce370a409b4f90e454ba5c1,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.01235723
+      objectReference: {fileID: 0}
     - target: {fileID: 1773088540107761295, guid: d313316b9ce370a409b4f90e454ba5c1,
         type: 3}
       propertyPath: m_TagString
@@ -4470,6 +4480,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275257051196323365, guid: d313316b9ce370a409b4f90e454ba5c1,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.01235723
       objectReference: {fileID: 0}
     - target: {fileID: 3631425470110737521, guid: d313316b9ce370a409b4f90e454ba5c1,
         type: 3}
@@ -5331,6 +5346,21 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Tagprokamer
       objectReference: {fileID: 0}
+    - target: {fileID: 1204989680978756358, guid: 1aa70c381c4e11f48b9a853ee0c8f40e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2920966
+      objectReference: {fileID: 0}
+    - target: {fileID: 1596145309194568748, guid: 1aa70c381c4e11f48b9a853ee0c8f40e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2920966
+      objectReference: {fileID: 0}
+    - target: {fileID: 1808613675395880443, guid: 1aa70c381c4e11f48b9a853ee0c8f40e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2920966
+      objectReference: {fileID: 0}
     - target: {fileID: 1867065905300637831, guid: 1aa70c381c4e11f48b9a853ee0c8f40e,
         type: 3}
       propertyPath: m_TagString
@@ -5346,6 +5376,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Tagprokamer
       objectReference: {fileID: 0}
+    - target: {fileID: 2411642040335546608, guid: 1aa70c381c4e11f48b9a853ee0c8f40e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2920966
+      objectReference: {fileID: 0}
     - target: {fileID: 2641387392808309729, guid: 1aa70c381c4e11f48b9a853ee0c8f40e,
         type: 3}
       propertyPath: m_TagString
@@ -5355,6 +5390,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2774284597721832980, guid: 1aa70c381c4e11f48b9a853ee0c8f40e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2920966
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115338557783516080, guid: 1aa70c381c4e11f48b9a853ee0c8f40e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2920966
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436247244256370165, guid: 1aa70c381c4e11f48b9a853ee0c8f40e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2920966
+      objectReference: {fileID: 0}
+    - target: {fileID: 3926005760479935398, guid: 1aa70c381c4e11f48b9a853ee0c8f40e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2920966
       objectReference: {fileID: 0}
     - target: {fileID: 4052335785545053843, guid: 1aa70c381c4e11f48b9a853ee0c8f40e,
         type: 3}
@@ -5435,6 +5490,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696804411255896694, guid: 1aa70c381c4e11f48b9a853ee0c8f40e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2920966
       objectReference: {fileID: 0}
     - target: {fileID: 5732206345079555642, guid: 1aa70c381c4e11f48b9a853ee0c8f40e,
         type: 3}
@@ -6035,6 +6095,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 544aae67ec4cd9c45b81c374f67b8469, type: 2}
+    - target: {fileID: 1697560883353498901, guid: d313316b9ce370a409b4f90e454ba5c1,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.01235723
+      objectReference: {fileID: 0}
     - target: {fileID: 1773088540107761295, guid: d313316b9ce370a409b4f90e454ba5c1,
         type: 3}
       propertyPath: m_TagString
@@ -6075,6 +6140,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 544aae67ec4cd9c45b81c374f67b8469, type: 2}
+    - target: {fileID: 3275257051196323365, guid: d313316b9ce370a409b4f90e454ba5c1,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.01235723
+      objectReference: {fileID: 0}
     - target: {fileID: 3343433999600328292, guid: d313316b9ce370a409b4f90e454ba5c1,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6478,6 +6548,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Tagprokamer
       objectReference: {fileID: 0}
+    - target: {fileID: 3115338557783516080, guid: 1aa70c381c4e11f48b9a853ee0c8f40e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2920966
+      objectReference: {fileID: 0}
     - target: {fileID: 3436247244256370165, guid: 1aa70c381c4e11f48b9a853ee0c8f40e,
         type: 3}
       propertyPath: m_LocalScale.z
@@ -6583,6 +6658,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2153b10b6fba1e2488e16a91572a3a35, type: 2}
+    - target: {fileID: 5696804411255896694, guid: 1aa70c381c4e11f48b9a853ee0c8f40e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2920966
+      objectReference: {fileID: 0}
     - target: {fileID: 5732206345079555642, guid: 1aa70c381c4e11f48b9a853ee0c8f40e,
         type: 3}
       propertyPath: m_TagString

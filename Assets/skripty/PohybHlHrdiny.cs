@@ -347,6 +347,14 @@ public class PohybHlHrdiny : MonoBehaviour
     }
     bool CheckGrounded()
     {
-        return Physics.SphereCast(transform.position, GetComponent<SphereCollider>().radius, Vector3.down, out _, GetComponent<SphereCollider>().radius * 0.5f + 0.1f, groundLayer);
+            // Use the actual scaled radius of the SphereCollider for the SphereCast
+            float scaledRadius = GetComponent<SphereCollider>().radius * transform.lossyScale.x;
+
+            // A simple spherecast to check if the sphere is grounded
+            RaycastHit hit;
+            Vector3 castOrigin = transform.position + Vector3.up * scaledRadius * 0.5f;
+
+            // Use the LayerMask parameter to filter only the specified ground layers
+            return Physics.SphereCast(castOrigin, scaledRadius, Vector3.down, out hit, scaledRadius * 0.5f + 0.1f, groundLayer);
     }
 }
