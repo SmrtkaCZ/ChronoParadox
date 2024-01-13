@@ -122,9 +122,13 @@ public class Interakce : MonoBehaviour
                             Dilaogovytext.text =
                                 "Edvard: \n" +
                                 "Vítej v Mnichovì.\n " +
-                                "Konì toho ti musím pùjèit, když to øíka Adolf.";
-                            FFA.questy++;
-                            FFA.Edvardtalk1 = true;
+                                "Konì toho ti musím pùjèit, když to øíka Adolf. \n"+
+                                "Vem si tohodle, který je vedle mne";
+                            if(!FFA.Edvardtalk1)
+                            {
+                                FFA.questy++;
+                                FFA.Edvardtalk1 = true;
+                            }
                         }
                         else
                         {
@@ -146,7 +150,7 @@ public class Interakce : MonoBehaviour
                         Dilaogovytext.text =
                             "Adolf: \n" +
                             "Vítej v Mnichovì.\n " +
-                            "Vidím, že hledáš konì zajdi az Evardem ten ti jistì nejákého pùjèí.";
+                            "Vidím, že hledáš konì, zajdi za Evardem ten ti jistì nejákého pùjèí.";
                         if(!FFA.Adolftalk1)
                         {
                             FFA.Adolftalk1 = true;
