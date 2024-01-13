@@ -20,6 +20,7 @@ public class Interakce : MonoBehaviour
     private float rych = 0.01f;
     GameObject[] krab;
     GameObject Dialog;
+    public TMP_Text Dilaogovytext;
     // Start is called before the first frame update
     private void Start()
     {
@@ -31,7 +32,7 @@ public class Interakce : MonoBehaviour
                 krab[i].gameObject.SetActive(false);
             }
         }
-        else if (SceneManager.GetActiveScene().buildIndex == 6)
+        else if (SceneManager.GetActiveScene().buildIndex == 6 || SceneManager.GetActiveScene().buildIndex == 8)
         {
             Dialog = GameObject.Find("Texting");
             if(gameObject.name == "V")
@@ -53,6 +54,8 @@ public class Interakce : MonoBehaviour
 
             if(FFA.V1&&FFA.V2&&FFA.V3&&FFA.V4)
             {
+                /*GameObject textovyobjekt = GameObject.Find("Text");
+                Dilaogovytext = textovyobjekt.GetComponent<TMP_Text>();*/
                 Dialog.SetActive(false);
             }
         }
@@ -85,7 +88,7 @@ public class Interakce : MonoBehaviour
                 }
             }
             //neon(1)
-            else if(gameObject.name == "Car"||gameObject.name == "mince")
+            else if(gameObject.name == "Car"||gameObject.name == "mince"|| gameObject.name == "Carves" && FFA.Neviltalk1)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
                 akce = false;
@@ -105,7 +108,7 @@ public class Interakce : MonoBehaviour
             else if(gameObject.tag == "vesnican")
             {
                 Dialog.gameObject.SetActive(true);
-                TMP_Text Dilaogovytext = GameObject.Find("Text").GetComponent<TMP_Text>();
+                
                 if (SceneManager.GetActiveScene().buildIndex == 6)
                 {
                     if (gameObject.name == "V0")
@@ -158,7 +161,7 @@ public class Interakce : MonoBehaviour
                         }
                     } 
                 }
-                else
+                else if (SceneManager.GetActiveScene().buildIndex == 8)
                 {
                     if (gameObject.name == "V0")
                     {
@@ -176,17 +179,38 @@ public class Interakce : MonoBehaviour
                     }
                     else if (gameObject.name == "V2")
                     {
-                        Dilaogovytext.text =
+                        if(FFA.Adolftalk2) 
+                        {
+                            Dilaogovytext.text =
+                            "Nevil: \n" +
+                            "Vítej v Mnichovì.\n " +
+                            "Auto je za domem";
+                            if(!FFA.Neviltalk1)
+                            {
+                                FFA.Neviltalk1 = true;
+                                FFA.questy++;
+                            }
+                        }
+                        else
+                        {
+                            Dilaogovytext.text =
                             "Nevil: \n" +
                             "Vítej v Mnichovì.\n " +
                             "Jo mít moc je super vìc.";
+                        }
+                        
                     }
                     else if (gameObject.name == "V3")
                     {
                         Dilaogovytext.text =
                             "Adolf: \n" +
                             "Vítej v Mnichovì.\n " +
-                            "Vidím, že hledáš konì zajdi az Evardem ten ti jistì nejákého pùjèí.";
+                            "Vidím, že hledáš Auto zajdi za Nevilem.";
+                        if(!FFA.Adolftalk2)
+                        {
+                            FFA.Adolftalk2 = true;
+                            FFA.questy++;
+                        }
                     }
                 }
 
