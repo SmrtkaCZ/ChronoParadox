@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Settings/Scenes/Vesnice 2.unity
     guid: 503ab26752f516f4b9bc668dd0b7b3ab
+  - enabled: 1
+    path: Assets/Settings/Scenes/NeonRUN 1.unity
+    guid: c11f2c54690ca44409b3e2033675dbb6
   m_configObjects: {}
