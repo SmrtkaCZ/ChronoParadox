@@ -2509,6 +2509,11 @@ PrefabInstance:
       propertyPath: playerSpeed
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 8820755553095007014, guid: 145e13f5c6cff184f846ffaaef6bb682,
+        type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3271,7 +3276,7 @@ PrefabInstance:
     - target: {fileID: 3909630114559739428, guid: fbf882ffd37929741b1c19e85d069471,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4846241214772516588, guid: fbf882ffd37929741b1c19e85d069471,
         type: 3}

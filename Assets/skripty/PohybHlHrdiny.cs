@@ -214,7 +214,6 @@ public class PohybHlHrdiny : MonoBehaviour
         
 
     }
-
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "PortalTutor")
