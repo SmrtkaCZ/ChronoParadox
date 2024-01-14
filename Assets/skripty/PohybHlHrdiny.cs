@@ -55,6 +55,7 @@ public class PohybHlHrdiny : MonoBehaviour
     private InputAction ESCAPE;
 
     private bool pauza = false;
+    
 
     private void Start()
     {
@@ -88,6 +89,7 @@ public class PohybHlHrdiny : MonoBehaviour
         {
             Leveling.text = "Level 2";
             FFA.questy = 5;
+            FFA.key = false;
         }
         else if (SceneManager.GetActiveScene().buildIndex == 4)
         {
@@ -122,27 +124,34 @@ public class PohybHlHrdiny : MonoBehaviour
             Leveling.text = "Level 7";
             FFA.questy = 18;
         }
-        else if (SceneManager.GetActiveScene().buildIndex == 2)
+        else if (SceneManager.GetActiveScene().buildIndex == 9)
         {
             Leveling.text = "Level 8";
             FFA.questy = 21;
         }
-        else if (SceneManager.GetActiveScene().buildIndex == 1)
+        else if (SceneManager.GetActiveScene().buildIndex == 10)
         {
             Leveling.text = "Level 8";
-            FFA.questy = 21;
+            FFA.questy = 22;
         }
         questsChanger();
     }
     void Update()
     {
+        if(FFA.questy == 23 && intErekce.triggered)
+        {
+            FFA.body += FFA.bodyvlevelu;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+        }
+        questsChanger();
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)
         {
             jumpcount = 0;
             playerVelocity.y = 0f;
         }
-        if(FFA.move)
+        questsChanger();
+        if (FFA.move)
         {
             Vector2 input = moveaction.ReadValue<Vector2>();
             Vector3 move = new Vector3(input.x, 0, input.y);
@@ -170,7 +179,7 @@ public class PohybHlHrdiny : MonoBehaviour
             controller.Move(playerVelocity * Time.deltaTime);
         }
 
-
+        questsChanger();
         Quaternion rotation = Quaternion.Euler(0, cameratrans.eulerAngles.y, 0);
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, RotationSpeed * Time.deltaTime);
 
@@ -187,9 +196,9 @@ public class PohybHlHrdiny : MonoBehaviour
             pauza = !pauza;
             PauzaMenu(pauza);
         }
-
+        questsChanger();
         //dropped
-        if(transform.position == FFA.StartPozice && VC1.Follow != null)
+        if (transform.position == FFA.StartPozice && VC1.Follow != null)
         {
             resetpoz = false;
         }
@@ -201,7 +210,7 @@ public class PohybHlHrdiny : MonoBehaviour
             VC1.Follow = transform;
             VC1.LookAt = transform;
         }
-        
+        questsChanger();
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -226,16 +235,13 @@ public class PohybHlHrdiny : MonoBehaviour
             FFA.body += FFA.bodyvlevelu;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
         }
-
-
-
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "PortalTutor")
+        if (collision.gameObject.tag == "PortalTutor"|| collision.gameObject.tag == "Dvere" && FFA.key)
         {
             FFA.body += FFA.bodyvlevelu;
-            SceneManager.LoadScene(2, LoadSceneMode.Single);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
         }
         else if (collision.gameObject.tag == "car")
         {
@@ -268,7 +274,6 @@ public class PohybHlHrdiny : MonoBehaviour
                 }
             }
         }
-        questsChanger();
     }
     private void PauzaMenu(bool cs)
     {
@@ -373,7 +378,7 @@ public class PohybHlHrdiny : MonoBehaviour
                 break;
             //Neon2
             case 21:
-                questing.text = "Go to office and show to your boss the items you found in past.";
+                questing.text = "Show to your boss the items you found in past.";
                 break;
             case 22:
                 questing.text = "You got the money go and buy Game you want.";

@@ -21,6 +21,7 @@ TagManager:
   - zakonem
   - text
   - zakonem2
+  - Dvere
   layers:
   - Default
   - TransparentFX

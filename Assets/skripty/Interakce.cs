@@ -62,6 +62,7 @@ public class Interakce : MonoBehaviour
     }
     private void Update()
     {
+        
         if(FFA.pressedE && tohokohopotrebujisity)
         {
             akce = true;
@@ -92,6 +93,12 @@ public class Interakce : MonoBehaviour
             {
                 FFA.body += FFA.bodyvlevelu;
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+                akce = false;
+            }
+            else if (gameObject.name == "Key")
+            {
+                FFA.key = true;
+                FFA.questy++;
                 akce = false;
             }
             //pirati (2)
@@ -223,7 +230,21 @@ public class Interakce : MonoBehaviour
                 FFA.questy++;
                 FFA.do7 = true;
                 gameObject.SetActive(false);
+                akce = false;
             }
+            //neon (2)
+            else if(gameObject.name == "Milan" )
+            {
+                gameObject.SetActive(false);
+                FFA.questy++;
+                akce = false;
+            }
+            else if (gameObject.name == "stanek")
+            {
+                FFA.questy++;
+                akce = false;
+            }
+            
         }
     }
     private void OnTriggerEnter(Collider other)

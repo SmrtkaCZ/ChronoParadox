@@ -26,4 +26,5 @@ static class FFA
 
     public static int bodyvlevelu = 0;
     public static bool do7 = false;
+    public static bool key = false;
 }
