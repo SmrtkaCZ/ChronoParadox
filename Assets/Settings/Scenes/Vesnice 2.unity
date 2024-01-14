@@ -5833,7 +5833,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 58.266663
+  field of view: 30.000002
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -5860,7 +5860,7 @@ Transform:
   m_GameObject: {fileID: 522811750}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 85, y: 24.402504, z: 32.28}
+  m_LocalPosition: {x: 85.407104, y: 30.47823, z: 21.73703}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10261,12 +10261,12 @@ PrefabInstance:
     - target: {fileID: 1978032064397631933, guid: 37ff9916f908da14c8dcf6973fcbd238,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24.402504
+      value: 30.47823
       objectReference: {fileID: 0}
     - target: {fileID: 1978032064397631933, guid: 37ff9916f908da14c8dcf6973fcbd238,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 32.28
+      value: 8.279999
       objectReference: {fileID: 0}
     - target: {fileID: 1978032064397631933, guid: 37ff9916f908da14c8dcf6973fcbd238,
         type: 3}
@@ -10318,6 +10318,36 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 1020555990}
+    - target: {fileID: 6503800106637634815, guid: 37ff9916f908da14c8dcf6973fcbd238,
+        type: 3}
+      propertyPath: m_VerticalAxis.m_MaxValue
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6503800106637634815, guid: 37ff9916f908da14c8dcf6973fcbd238,
+        type: 3}
+      propertyPath: m_VerticalAxis.m_MinValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6503800106637634815, guid: 37ff9916f908da14c8dcf6973fcbd238,
+        type: 3}
+      propertyPath: m_HorizontalAxis.m_MaxSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9079773837029088664, guid: 37ff9916f908da14c8dcf6973fcbd238,
+        type: 3}
+      propertyPath: m_ScreenY
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9079773837029088664, guid: 37ff9916f908da14c8dcf6973fcbd238,
+        type: 3}
+      propertyPath: m_TrackedObjectOffset.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9079773837029088664, guid: 37ff9916f908da14c8dcf6973fcbd238,
+        type: 3}
+      propertyPath: m_TrackedObjectOffset.z
+      value: -24
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
