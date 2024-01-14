@@ -97,6 +97,7 @@ public class Interakce : MonoBehaviour
             }
             else if (gameObject.name == "Key")
             {
+                gameObject.SetActive(false);
                 FFA.key = true;
                 FFA.questy++;
                 akce = false;
