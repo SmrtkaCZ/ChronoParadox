@@ -4116,6 +4116,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3352297619771507780, guid: 145e13f5c6cff184f846ffaaef6bb682,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3628032748123070482, guid: 145e13f5c6cff184f846ffaaef6bb682,
         type: 3}
       propertyPath: m_Enabled
@@ -4156,6 +4161,11 @@ PrefabInstance:
       propertyPath: questing
       value: 
       objectReference: {fileID: 2074084719}
+    - target: {fileID: 8820755553095007014, guid: 145e13f5c6cff184f846ffaaef6bb682,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8820755553095007014, guid: 145e13f5c6cff184f846ffaaef6bb682,
         type: 3}
       propertyPath: groundLayer.m_Bits

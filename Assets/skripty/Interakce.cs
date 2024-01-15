@@ -262,7 +262,7 @@ public class Interakce : MonoBehaviour
                 if (ididit)
                 {
                     text.gameObject.SetActive(true);
-                }
+                }   
                 tohokohopotrebujisity = true;
                 FFA.ucaninter = ididit;
             }
