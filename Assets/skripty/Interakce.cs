@@ -252,12 +252,21 @@ public class Interakce : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            if(ididit)
+            
+            if(gameObject.name == "ves" && !FFA.Neviltalk1)
             {
-                text.gameObject.SetActive(true);
+
             }
-            tohokohopotrebujisity = true;
-            FFA.ucaninter = ididit;
+            else
+            {
+                if (ididit)
+                {
+                    text.gameObject.SetActive(true);
+                }
+                tohokohopotrebujisity = true;
+                FFA.ucaninter = ididit;
+            }
+
         }
     }
     private void OnTriggerExit(Collider other)
