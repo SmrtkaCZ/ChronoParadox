@@ -89,7 +89,7 @@ public class Interakce : MonoBehaviour
                 }
             }
             //neon(1)
-            else if(gameObject.name == "Car"||gameObject.name == "mince"|| gameObject.name == "Carves" && FFA.Neviltalk1)
+            else if(gameObject.name == "Car"||gameObject.name == "mince"|| gameObject.name == "ves" && FFA.Neviltalk1)
             {
                 FFA.body += FFA.bodyvlevelu;
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
@@ -120,7 +120,7 @@ public class Interakce : MonoBehaviour
                 
                 if (SceneManager.GetActiveScene().buildIndex == 6)
                 {
-                    if (gameObject.name == "V0")
+                    if (gameObject.name == "V")
                     {
                         Dilaogovytext.text =
                             "Benito: \n" +
@@ -172,7 +172,7 @@ public class Interakce : MonoBehaviour
                 }
                 else if (SceneManager.GetActiveScene().buildIndex == 8)
                 {
-                    if (gameObject.name == "V0")
+                    if (gameObject.name == "V")
                     {
                         Dilaogovytext.text =
                             "Benito: \n" +
