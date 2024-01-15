@@ -125,7 +125,7 @@ public class Interakce : MonoBehaviour
                         Dilaogovytext.text =
                             "Benito: \n" +
                             "Vítej v Mnichovì.\n " +
-                            "Hitler je mùj velký kamarád.";
+                            "Adolf je mùj velký kamarád.";
                     }
                     else if (gameObject.name == "V1")
                     {
@@ -162,7 +162,7 @@ public class Interakce : MonoBehaviour
                         Dilaogovytext.text =
                             "Adolf: \n" +
                             "Vítej v Mnichovì.\n " +
-                            "Vidím, že hledáš konì, zajdi za Evardem ten ti jistì nejákého pùjèí.";
+                            "Vidím, že hledáš konì, zajdi za Edvardem ten ti jistì nejákého pùjèí.";
                         if(!FFA.Adolftalk1)
                         {
                             FFA.Adolftalk1 = true;
@@ -177,7 +177,7 @@ public class Interakce : MonoBehaviour
                         Dilaogovytext.text =
                             "Benito: \n" +
                             "Vítej v Mnichovì.\n " +
-                            "Hitler je mùj velký kamarád.";
+                            "Adolf je mùj velký kamarád.";
                     }
                     else if (gameObject.name == "V1")
                     {
@@ -236,7 +236,6 @@ public class Interakce : MonoBehaviour
             //neon (2)
             else if(gameObject.name == "Milan" )
             {
-                gameObject.SetActive(false);
                 FFA.questy++;
                 akce = false;
             }

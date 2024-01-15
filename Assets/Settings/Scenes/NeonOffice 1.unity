@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 28248345}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -236,6 +236,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1665783389608545120, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748880360397761923, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 1754611878057632740, guid: f355da60777d10946920a8b633e6b316,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -286,10 +296,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2303120982033688281, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 3315489266759930359, guid: f355da60777d10946920a8b633e6b316,
         type: 3}
       propertyPath: m_Name
       value: Shelf with Crates
+      objectReference: {fileID: 0}
+    - target: {fileID: 3315489266759930359, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323860960884657983, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647754257586877162, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428096482494699532, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816515674745424473, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -314,7 +354,7 @@ GameObject:
   - component: {fileID: 37375459}
   m_Layer: 0
   m_Name: Cube (9)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -420,7 +460,7 @@ GameObject:
   - component: {fileID: 52462404}
   m_Layer: 0
   m_Name: Cube (19)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -580,6 +620,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tv 32 Inch (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 11493361a00a45c4cb8edc10de4df39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: -431593170484198626, guid: 11493361a00a45c4cb8edc10de4df39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2626686183709323561, guid: 11493361a00a45c4cb8edc10de4df39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -606,6 +661,10 @@ PrefabInstance:
     - target: {fileID: 1950871307682000, guid: 01348926c7cbb3347a006c37204131c3, type: 3}
       propertyPath: m_Name
       value: GoldCoins
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950871307682000, guid: 01348926c7cbb3347a006c37204131c3, type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     - target: {fileID: 4521874486784168, guid: 01348926c7cbb3347a006c37204131c3, type: 3}
       propertyPath: m_LocalScale.x
@@ -677,6 +736,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coffee Maker
       objectReference: {fileID: 0}
+    - target: {fileID: 1239201142768515450, guid: 026bbb898b925f54b9fc6523b72e5933,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 1907650969983378368, guid: 026bbb898b925f54b9fc6523b72e5933,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -746,6 +810,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674165484966477533, guid: 026bbb898b925f54b9fc6523b72e5933,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -839,7 +908,7 @@ GameObject:
   - component: {fileID: 103367090}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -944,7 +1013,7 @@ GameObject:
   - component: {fileID: 106070057}
   m_Layer: 0
   m_Name: Cube (20)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1104,11 +1173,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tv 32 Inch (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 11493361a00a45c4cb8edc10de4df39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: -431593170484198626, guid: 11493361a00a45c4cb8edc10de4df39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 221013009902686163, guid: 11493361a00a45c4cb8edc10de4df39c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e277277f7d9c9ae4b826475fd62061c9, type: 2}
+    - target: {fileID: 2626686183709323561, guid: 11493361a00a45c4cb8edc10de4df39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1211,7 +1295,7 @@ GameObject:
   - component: {fileID: 202278273}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1505,6 +1589,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: sax
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: caee65ac05a226f4bb3f3279bb6f3198,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: caee65ac05a226f4bb3f3279bb6f3198,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1550,6 +1639,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 78.84
       objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: caee65ac05a226f4bb3f3279bb6f3198,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1563,10 +1657,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 641557538031808496, guid: 189a9280397c2594ba84092398c84bb3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069046435868712521, guid: 189a9280397c2594ba84092398c84bb3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 8107088758560444937, guid: 189a9280397c2594ba84092398c84bb3,
         type: 3}
       propertyPath: m_Name
       value: Microwave_Oven
+      objectReference: {fileID: 0}
+    - target: {fileID: 8107088758560444937, guid: 189a9280397c2594ba84092398c84bb3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     - target: {fileID: 8919936416863914163, guid: 189a9280397c2594ba84092398c84bb3,
         type: 3}
@@ -1665,7 +1774,7 @@ GameObject:
   - component: {fileID: 334279760}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1770,7 +1879,7 @@ GameObject:
   - component: {fileID: 346570201}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1875,7 +1984,7 @@ GameObject:
   - component: {fileID: 380253708}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1980,7 +2089,7 @@ GameObject:
   - component: {fileID: 380633548}
   m_Layer: 0
   m_Name: '"Counter" (1)'
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2085,7 +2194,7 @@ GameObject:
   - component: {fileID: 399980572}
   m_Layer: 0
   m_Name: '"Counter" (2)'
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2184,6 +2293,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9011121634745004123, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -6555260210868630851, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2194,6 +2308,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e277277f7d9c9ae4b826475fd62061c9, type: 2}
+    - target: {fileID: -4760397688035198320, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -4725105600281226045, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2254,6 +2373,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 43c6c333495c322469f9cf093afac0d9, type: 2}
+    - target: {fileID: -2786957922568773578, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -2575528296872436285, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2264,10 +2388,25 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 045239b74499fce4fb282786f8c10c15, type: 2}
+    - target: {fileID: -1057182168258439921, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Name
       value: Table Set 1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: -838008012807992823, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     - target: {fileID: 4582637049508583478, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
@@ -2289,6 +2428,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 691db30be31e7d44da5091dff90a19fc, type: 2}
+    - target: {fileID: 5322470328466629114, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5366472344829126251, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 6533501235510226529, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2376,7 +2525,7 @@ GameObject:
   - component: {fileID: 416101464}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2599,7 +2748,7 @@ GameObject:
   - component: {fileID: 465436766}
   m_Layer: 0
   m_Name: Cube (12)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2753,6 +2902,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall Pillar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565488667879516828, guid: 964d019e82327ae41878ec0410f5d5e0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2958,7 +3112,7 @@ GameObject:
   - component: {fileID: 483966737}
   m_Layer: 0
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3064,7 +3218,7 @@ GameObject:
   - component: {fileID: 491419913}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3168,6 +3322,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AirFryer
       objectReference: {fileID: 0}
+    - target: {fileID: 4677379222891419799, guid: fbfe382c29a4ab547a520eb7084a534c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 5450115533087965741, guid: fbfe382c29a4ab547a520eb7084a534c,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -3237,6 +3396,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839591289282458647, guid: fbfe382c29a4ab547a520eb7084a534c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3549,7 +3713,7 @@ GameObject:
   - component: {fileID: 525429856}
   m_Layer: 0
   m_Name: '"Counter"'
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3654,7 +3818,7 @@ GameObject:
   - component: {fileID: 543675411}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3763,6 +3927,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Office Chair (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1248434477200255633, guid: dc35c61ecac9f3e4ea7e96c2ce7f1218,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 2812512613354297474, guid: dc35c61ecac9f3e4ea7e96c2ce7f1218,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3837,7 +4006,7 @@ GameObject:
   - component: {fileID: 553821561}
   m_Layer: 0
   m_Name: Cube (25)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3937,6 +4106,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 480490481329841306, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350680406491291325, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 5201423646680458952, guid: ea0853a3b2545524481b0c984f27afd1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3987,10 +4166,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5727746866641776305, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357055583202600309, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6724233074684298454, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336386927362551585, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 9081733268757600699, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 9112034284639769819, guid: ea0853a3b2545524481b0c984f27afd1,
         type: 3}
       propertyPath: m_Name
       value: Server Rack (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9112034284639769819, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197908801992035335, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4055,10 +4269,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7862391691550088030, guid: 7ab120a7910b62f48a530e5b2d017a74,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7ab120a7910b62f48a530e5b2d017a74,
         type: 3}
       propertyPath: m_Name
       value: Toilet (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7ab120a7910b62f48a530e5b2d017a74,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7742780737561719692, guid: 7ab120a7910b62f48a530e5b2d017a74,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8487167654232718067, guid: 7ab120a7910b62f48a530e5b2d017a74,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4261,6 +4495,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Office Chair
       objectReference: {fileID: 0}
+    - target: {fileID: 1248434477200255633, guid: dc35c61ecac9f3e4ea7e96c2ce7f1218,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 2812512613354297474, guid: dc35c61ecac9f3e4ea7e96c2ce7f1218,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4399,6 +4638,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: washbasin-01
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 71523a6dbb4809747b0c88200d4ef850,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4422,7 +4666,7 @@ GameObject:
   - component: {fileID: 632269610}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4521,6 +4765,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 158947345130517468, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 374576049621740102, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 390458226059501696, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 508904034042405955, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 613386163599807043, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 1706457510024116282, guid: a900f1c22e5d88743b2dcfab96b6a24c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4571,10 +4840,120 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1853376413518571260, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2204672788320481654, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 2447099228734753321, guid: a900f1c22e5d88743b2dcfab96b6a24c,
         type: 3}
       propertyPath: m_Name
       value: Mechanical arm 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2447099228734753321, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736542470683983334, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010663133750172093, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3015931653772278773, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3143317766748594634, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3400816622443170432, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476355869057133663, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483637003501025613, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6051102548482161100, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6165089904583683510, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802677658678042596, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803619048870588567, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7111889533632377845, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7694977423377730395, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7921887511980564498, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8554404507165429801, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690021873063796052, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8872413418678977145, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8950125937179019415, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087554838168300780, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4593,6 +4972,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Carpet 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436064586063943877, guid: f76c0046fe9320845991ccc887dd6674,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     - target: {fileID: 8001251104799517398, guid: f76c0046fe9320845991ccc887dd6674,
         type: 3}
@@ -4746,7 +5130,7 @@ GameObject:
   - component: {fileID: 686583855}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4900,6 +5284,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Pillar (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8565488667879516828, guid: 964d019e82327ae41878ec0410f5d5e0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4919,7 +5308,7 @@ GameObject:
   - component: {fileID: 713775065}
   m_Layer: 0
   m_Name: Cube (28)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5202,6 +5591,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Pillar (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8565488667879516828, guid: 964d019e82327ae41878ec0410f5d5e0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5215,6 +5609,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1004557351420934833, guid: 0e2e9d86e44cdba4b9e3bb8c0355c34a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 5087550972260045046, guid: 0e2e9d86e44cdba4b9e3bb8c0355c34a,
         type: 3}
       propertyPath: m_Name
@@ -5289,7 +5688,7 @@ GameObject:
   - component: {fileID: 814969405}
   m_Layer: 0
   m_Name: Cube (21)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5395,7 +5794,7 @@ GameObject:
   - component: {fileID: 829953197}
   m_Layer: 0
   m_Name: Cube (29)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5500,7 +5899,7 @@ GameObject:
   - component: {fileID: 844270011}
   m_Layer: 0
   m_Name: Cube (24)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5606,7 +6005,7 @@ GameObject:
   - component: {fileID: 861322686}
   m_Layer: 0
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5712,7 +6111,7 @@ GameObject:
   - component: {fileID: 864480523}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5811,6 +6210,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1665783389608545120, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748880360397761923, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 1754611878057632740, guid: f355da60777d10946920a8b633e6b316,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5861,10 +6270,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2303120982033688281, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 3315489266759930359, guid: f355da60777d10946920a8b633e6b316,
         type: 3}
       propertyPath: m_Name
       value: Shelf with Crates (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3315489266759930359, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323860960884657983, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647754257586877162, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428096482494699532, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816515674745424473, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5887,6 +6326,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Table Grey Wood Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5700904902934687005, guid: 0926d2a463524f24bafe7ac832056cea,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     - target: {fileID: 8738943796963876622, guid: 0926d2a463524f24bafe7ac832056cea,
         type: 3}
@@ -6084,6 +6528,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Pillar (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8565488667879516828, guid: 964d019e82327ae41878ec0410f5d5e0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6097,10 +6546,40 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1323608338484919914, guid: 51ed19930404371458e8d3152edbad78,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626678312682306151, guid: 51ed19930404371458e8d3152edbad78,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2674189065372876025, guid: 51ed19930404371458e8d3152edbad78,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 6100434731370130537, guid: 51ed19930404371458e8d3152edbad78,
         type: 3}
       propertyPath: m_Name
       value: Fridge_SBS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100434731370130537, guid: 51ed19930404371458e8d3152edbad78,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223964705008206678, guid: 51ed19930404371458e8d3152edbad78,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838641303824086895, guid: 51ed19930404371458e8d3152edbad78,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     - target: {fileID: 6909306594215196371, guid: 51ed19930404371458e8d3152edbad78,
         type: 3}
@@ -6167,6 +6646,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7067773725115226821, guid: 51ed19930404371458e8d3152edbad78,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172375191582535755, guid: 51ed19930404371458e8d3152edbad78,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6186,7 +6675,7 @@ GameObject:
   - component: {fileID: 945973849}
   m_Layer: 0
   m_Name: Cube (13)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6320,7 +6809,7 @@ GameObject:
   - component: {fileID: 969039096}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6425,7 +6914,7 @@ GameObject:
   - component: {fileID: 1011680423}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6530,7 +7019,7 @@ GameObject:
   - component: {fileID: 1060030235}
   m_Layer: 0
   m_Name: Cube (16)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6636,7 +7125,7 @@ GameObject:
   - component: {fileID: 1075181399}
   m_Layer: 0
   m_Name: Cube (10)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6848,7 +7337,7 @@ GameObject:
   - component: {fileID: 1088627082}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6953,7 +7442,7 @@ GameObject:
   - component: {fileID: 1092887753}
   m_Layer: 5
   m_Name: Text (TMP) (1)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7142,11 +7631,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tv 32 Inch
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 11493361a00a45c4cb8edc10de4df39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: -431593170484198626, guid: 11493361a00a45c4cb8edc10de4df39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 221013009902686163, guid: 11493361a00a45c4cb8edc10de4df39c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e277277f7d9c9ae4b826475fd62061c9, type: 2}
+    - target: {fileID: 2626686183709323561, guid: 11493361a00a45c4cb8edc10de4df39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7221,6 +7725,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fan
       objectReference: {fileID: 0}
+    - target: {fileID: 942047845792653608, guid: f14d1ac6dacfc0242bed295f91ed3591,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7234,6 +7743,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1665783389608545120, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748880360397761923, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 1754611878057632740, guid: f355da60777d10946920a8b633e6b316,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7284,10 +7803,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2303120982033688281, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 3315489266759930359, guid: f355da60777d10946920a8b633e6b316,
         type: 3}
       propertyPath: m_Name
       value: Shelf with Crates (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3315489266759930359, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323860960884657983, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647754257586877162, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428096482494699532, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816515674745424473, guid: f355da60777d10946920a8b633e6b316,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7366,6 +7915,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Pillar (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8565488667879516828, guid: 964d019e82327ae41878ec0410f5d5e0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7388,6 +7942,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Office Chair (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1248434477200255633, guid: dc35c61ecac9f3e4ea7e96c2ce7f1218,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     - target: {fileID: 2812512613354297474, guid: dc35c61ecac9f3e4ea7e96c2ce7f1218,
         type: 3}
@@ -7491,7 +8050,7 @@ GameObject:
   - component: {fileID: 1139495249}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7595,7 +8154,7 @@ GameObject:
   - component: {fileID: 1164849503}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7749,6 +8308,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stool (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7229012000543011825, guid: 30971ea7d19a057458bf89e85d9d1f6c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7867,10 +8431,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 253450323078487171, guid: 158f818f5cdf7f54f8cb6f3b74f535c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130857987846185261, guid: 158f818f5cdf7f54f8cb6f3b74f535c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857590766452335182, guid: 158f818f5cdf7f54f8cb6f3b74f535c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6018796664339057138, guid: 158f818f5cdf7f54f8cb6f3b74f535c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129929430290325132, guid: 158f818f5cdf7f54f8cb6f3b74f535c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 6202668810318017221, guid: 158f818f5cdf7f54f8cb6f3b74f535c8,
         type: 3}
       propertyPath: m_Name
       value: Stove
+      objectReference: {fileID: 0}
+    - target: {fileID: 6202668810318017221, guid: 158f818f5cdf7f54f8cb6f3b74f535c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6432695747220545693, guid: 158f818f5cdf7f54f8cb6f3b74f535c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     - target: {fileID: 6728270949622622335, guid: 158f818f5cdf7f54f8cb6f3b74f535c8,
         type: 3}
@@ -7941,6 +8540,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7168276463004793546, guid: 158f818f5cdf7f54f8cb6f3b74f535c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265718345985046041, guid: 158f818f5cdf7f54f8cb6f3b74f535c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8152,6 +8761,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Pillar 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2732132711335018034, guid: ffd39571c14682942b10081c3295091c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8225,11 +8839,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tv 32 Inch
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 11493361a00a45c4cb8edc10de4df39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: -431593170484198626, guid: 11493361a00a45c4cb8edc10de4df39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 221013009902686163, guid: 11493361a00a45c4cb8edc10de4df39c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e277277f7d9c9ae4b826475fd62061c9, type: 2}
+    - target: {fileID: 2626686183709323561, guid: 11493361a00a45c4cb8edc10de4df39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8249,6 +8878,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9011121634745004123, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: -7273349273436846234, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -6555260210868630851, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8299,6 +8938,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e277277f7d9c9ae4b826475fd62061c9, type: 2}
+    - target: {fileID: -4760397688035198320, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -4725105600281226045, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8359,26 +9003,71 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 43c6c333495c322469f9cf093afac0d9, type: 2}
+    - target: {fileID: -2786957922568773578, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -2575528296872436285, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9eed0a891dc6ed6469bcff99a5dfaef0, type: 2}
+    - target: {fileID: -1612924399155311229, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -1474769168228644057, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 045239b74499fce4fb282786f8c10c15, type: 2}
+    - target: {fileID: -1096010460141269492, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: -1057182168258439921, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Name
       value: Table Set 1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: -838008012807992823, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 977672677264184269, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     - target: {fileID: 5268680067342317059, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 691db30be31e7d44da5091dff90a19fc, type: 2}
+    - target: {fileID: 5322470328466629114, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5366472344829126251, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 6533501235510226529, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8388,6 +9077,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.062
+      objectReference: {fileID: 0}
+    - target: {fileID: 6934840374383866608, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     - target: {fileID: 8617002051310402438, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
@@ -8501,10 +9195,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7862391691550088030, guid: 7ab120a7910b62f48a530e5b2d017a74,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7ab120a7910b62f48a530e5b2d017a74,
         type: 3}
       propertyPath: m_Name
       value: Toilet (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7ab120a7910b62f48a530e5b2d017a74,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7742780737561719692, guid: 7ab120a7910b62f48a530e5b2d017a74,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8487167654232718067, guid: 7ab120a7910b62f48a530e5b2d017a74,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8525,7 +9239,7 @@ GameObject:
   - component: {fileID: 1255494730}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8773,10 +9487,35 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4899776416375190839, guid: 7b5ec1159cb969d4a8fe69fddc2f17d8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 5413734714468200646, guid: 7b5ec1159cb969d4a8fe69fddc2f17d8,
         type: 3}
       propertyPath: m_Name
       value: Fridge
+      objectReference: {fileID: 0}
+    - target: {fileID: 5413734714468200646, guid: 7b5ec1159cb969d4a8fe69fddc2f17d8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5590939823191728256, guid: 7b5ec1159cb969d4a8fe69fddc2f17d8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8521344153989941416, guid: 7b5ec1159cb969d4a8fe69fddc2f17d8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 9072896458465725678, guid: 7b5ec1159cb969d4a8fe69fddc2f17d8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8915,7 +9654,7 @@ GameObject:
   - component: {fileID: 1395714858}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9014,6 +9753,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9011121634745004123, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: -7273349273436846234, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -6555260210868630851, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9064,6 +9813,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e277277f7d9c9ae4b826475fd62061c9, type: 2}
+    - target: {fileID: -4760397688035198320, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -4725105600281226045, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9124,26 +9878,71 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 43c6c333495c322469f9cf093afac0d9, type: 2}
+    - target: {fileID: -2786957922568773578, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -2575528296872436285, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ca0379a63e556f647bfd15138570b99e, type: 2}
+    - target: {fileID: -1612924399155311229, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -1474769168228644057, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 045239b74499fce4fb282786f8c10c15, type: 2}
+    - target: {fileID: -1096010460141269492, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: -1057182168258439921, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Name
       value: Table Set 1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: -838008012807992823, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 977672677264184269, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     - target: {fileID: 5268680067342317059, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 691db30be31e7d44da5091dff90a19fc, type: 2}
+    - target: {fileID: 5322470328466629114, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5366472344829126251, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 6533501235510226529, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9153,6 +9952,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.062
+      objectReference: {fileID: 0}
+    - target: {fileID: 6934840374383866608, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     - target: {fileID: 8617002051310402438, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
@@ -9281,6 +10085,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carpet 12
       objectReference: {fileID: 0}
+    - target: {fileID: 3022743157575346680, guid: da0accff20027304e9912226d132eaf5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9300,7 +10109,7 @@ GameObject:
   - component: {fileID: 1454588023}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9468,6 +10277,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 06_MusketShop_Banner
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c1407e581d315c4f809492566899f2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9664,6 +10478,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Office Chair (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1248434477200255633, guid: dc35c61ecac9f3e4ea7e96c2ce7f1218,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 2812512613354297474, guid: dc35c61ecac9f3e4ea7e96c2ce7f1218,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9738,7 +10557,7 @@ GameObject:
   - component: {fileID: 1500640038}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9837,6 +10656,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6035610177607042665, guid: e73c1c658aeddd042bc049a907126289,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 6090240345492802338, guid: e73c1c658aeddd042bc049a907126289,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9892,6 +10716,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door Wall Opaque
       objectReference: {fileID: 0}
+    - target: {fileID: 7532100892122287304, guid: e73c1c658aeddd042bc049a907126289,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7532100892535073528, guid: e73c1c658aeddd042bc049a907126289,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9911,7 +10745,7 @@ GameObject:
   - component: {fileID: 1511464490}
   m_Layer: 0
   m_Name: Cube (15)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10058,7 +10892,7 @@ GameObject:
   - component: {fileID: 1515611614}
   m_Layer: 0
   m_Name: Cube (17)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10163,6 +10997,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mixer
       objectReference: {fileID: 0}
+    - target: {fileID: 5768377409343704515, guid: 0bd166eac535dfd43bc28b43190b289a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 6577142344966051705, guid: 0bd166eac535dfd43bc28b43190b289a,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -10252,7 +11091,7 @@ GameObject:
   - component: {fileID: 1567346602}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10357,7 +11196,7 @@ GameObject:
   - component: {fileID: 1576480336}
   m_Layer: 0
   m_Name: Cube (22)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10562,6 +11401,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9011121634745004123, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -6555260210868630851, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -10572,6 +11416,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 12fcb5a13cb1b4d43979a33af85be588, type: 2}
+    - target: {fileID: -4760397688035198320, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -4725105600281226045, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -10632,6 +11481,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 43c6c333495c322469f9cf093afac0d9, type: 2}
+    - target: {fileID: -2786957922568773578, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -2575528296872436285, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -10642,16 +11496,41 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 045239b74499fce4fb282786f8c10c15, type: 2}
+    - target: {fileID: -1057182168258439921, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Name
       value: Table Set 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: -838008012807992823, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     - target: {fileID: 5268680067342317059, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 691db30be31e7d44da5091dff90a19fc, type: 2}
+    - target: {fileID: 5322470328466629114, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5366472344829126251, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 6533501235510226529, guid: 4d7a1f2d72196e24bb9a9eefb40859c3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10735,7 +11614,7 @@ GameObject:
   - component: {fileID: 1605080308}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10840,7 +11719,7 @@ GameObject:
   - component: {fileID: 1662882803}
   m_Layer: 0
   m_Name: Cube (30)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11166,6 +12045,11 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 2034929870}
+    - target: {fileID: 7572244306903292095, guid: 37ff9916f908da14c8dcf6973fcbd238,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11251,6 +12135,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Pillar (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8565488667879516828, guid: 964d019e82327ae41878ec0410f5d5e0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11319,6 +12208,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table 6
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 41201aa748c547a43803606538ab6800,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 1395989870815394981, guid: 41201aa748c547a43803606538ab6800, type: 3}
@@ -11338,6 +12232,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 158947345130517468, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 374576049621740102, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 390458226059501696, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 508904034042405955, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 613386163599807043, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 1706457510024116282, guid: a900f1c22e5d88743b2dcfab96b6a24c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11388,10 +12307,120 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1853376413518571260, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2204672788320481654, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 2447099228734753321, guid: a900f1c22e5d88743b2dcfab96b6a24c,
         type: 3}
       propertyPath: m_Name
       value: Mechanical arm 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2447099228734753321, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736542470683983334, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3010663133750172093, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3015931653772278773, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3143317766748594634, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3400816622443170432, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476355869057133663, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483637003501025613, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6051102548482161100, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6165089904583683510, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802677658678042596, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6803619048870588567, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7111889533632377845, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7694977423377730395, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7921887511980564498, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8554404507165429801, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690021873063796052, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8872413418678977145, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8950125937179019415, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087554838168300780, guid: a900f1c22e5d88743b2dcfab96b6a24c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11493,7 +12522,7 @@ GameObject:
   - component: {fileID: 1761469965}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11598,7 +12627,7 @@ GameObject:
   - component: {fileID: 1766278002}
   m_Layer: 0
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11768,6 +12797,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carpet 11
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 377835cb3fa2b9141894051f66db8b1f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11781,6 +12815,61 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 154427101111854276, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 746522536008375402, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 965478689447524131, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1594690895319811864, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733617176249191013, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997073239994258760, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2063527578557095846, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200951261428825053, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3211042027136577148, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706452381919325949, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3826071638592486023, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 4492899691836308358, guid: cac581442f0ff4e429749ff81932fe8a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11796,6 +12885,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.136
       objectReference: {fileID: 0}
+    - target: {fileID: 4535639607637919957, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4538902758518810534, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4711878673761885464, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 4932344843437425473, guid: cac581442f0ff4e429749ff81932fe8a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11810,6 +12914,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 1.377
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002379437458434775, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281770893523889348, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286704053894893196, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406973371189016315, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5738715998986886577, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     - target: {fileID: 6130229423526549514, guid: cac581442f0ff4e429749ff81932fe8a,
         type: 3}
@@ -11861,10 +12990,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6812000697025592174, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107404499185050861, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 7154437458797816345, guid: cac581442f0ff4e429749ff81932fe8a,
         type: 3}
       propertyPath: m_Name
       value: Mechanical arm 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154437458797816345, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7324226929842486647, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7349044224289486769, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465243036110467954, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7499914015889376626, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     - target: {fileID: 7700406296137901339, guid: cac581442f0ff4e429749ff81932fe8a,
         type: 3}
@@ -11930,6 +13094,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.258
+      objectReference: {fileID: 0}
+    - target: {fileID: 8732100894211076557, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083392389929838151, guid: cac581442f0ff4e429749ff81932fe8a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12008,6 +13182,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Pillar (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8565488667879516828, guid: 964d019e82327ae41878ec0410f5d5e0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12027,7 +13206,7 @@ GameObject:
   - component: {fileID: 1803265050}
   m_Layer: 0
   m_Name: Cube (23)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12133,7 +13312,7 @@ GameObject:
   - component: {fileID: 1818261216}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12238,7 +13417,7 @@ GameObject:
   - component: {fileID: 1821629052}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12342,7 +13521,7 @@ GameObject:
   - component: {fileID: 1829308693}
   m_Layer: 0
   m_Name: EventSystem
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12411,7 +13590,7 @@ GameObject:
   - component: {fileID: 1833326427}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12516,7 +13695,7 @@ GameObject:
   - component: {fileID: 1840511027}
   m_Layer: 0
   m_Name: Cube (27)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12621,7 +13800,7 @@ GameObject:
   - component: {fileID: 1845364161}
   m_Layer: 0
   m_Name: Cube (14)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12727,7 +13906,7 @@ GameObject:
   - component: {fileID: 1872547712}
   m_Layer: 0
   m_Name: Cube (26)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12827,6 +14006,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2404435199479747921, guid: 8b2ed08f82f4cea41907e2cf2f8938c5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404435199615584203, guid: 8b2ed08f82f4cea41907e2cf2f8938c5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788139911063079577, guid: 8b2ed08f82f4cea41907e2cf2f8938c5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788139911480793091, guid: 8b2ed08f82f4cea41907e2cf2f8938c5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 5944654773601380002, guid: 8b2ed08f82f4cea41907e2cf2f8938c5,
         type: 3}
       propertyPath: m_Name
@@ -12902,6 +14101,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7853184493540918555, guid: 8b2ed08f82f4cea41907e2cf2f8938c5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853184493689706369, guid: 8b2ed08f82f4cea41907e2cf2f8938c5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12921,7 +14130,7 @@ GameObject:
   - component: {fileID: 1946727884}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13075,6 +14284,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stool
       objectReference: {fileID: 0}
+    - target: {fileID: 7229012000543011825, guid: 30971ea7d19a057458bf89e85d9d1f6c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13121,7 +14335,7 @@ GameObject:
   - component: {fileID: 2000312937}
   m_Layer: 5
   m_Name: Text (TMP) (2)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13305,6 +14519,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Pillar (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8565488667879516828, guid: 964d019e82327ae41878ec0410f5d5e0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13318,6 +14537,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 480490481329841306, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350680406491291325, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 5201423646680458952, guid: ea0853a3b2545524481b0c984f27afd1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13368,10 +14597,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5727746866641776305, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357055583202600309, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6724233074684298454, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336386927362551585, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 9081733268757600699, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 9112034284639769819, guid: ea0853a3b2545524481b0c984f27afd1,
         type: 3}
       propertyPath: m_Name
       value: Server Rack
+      objectReference: {fileID: 0}
+    - target: {fileID: 9112034284639769819, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197908801992035335, guid: ea0853a3b2545524481b0c984f27afd1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13445,6 +14709,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall Pillar (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565488667879516828, guid: 964d019e82327ae41878ec0410f5d5e0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13830,6 +15099,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carpet 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3321932722678166074, guid: bc567933eeb3fc84987a3b0a2c87f78e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     - target: {fileID: 3901584271892563686, guid: bc567933eeb3fc84987a3b0a2c87f78e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -14108,6 +15382,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carpet 11 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2779473631073534170, guid: 10a3779e5a6dba14c80e8ae762c9a3ac,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14181,6 +15460,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tv 32 Inch (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 11493361a00a45c4cb8edc10de4df39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: -431593170484198626, guid: 11493361a00a45c4cb8edc10de4df39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2626686183709323561, guid: 11493361a00a45c4cb8edc10de4df39c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tagprokamer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14206,7 +15500,7 @@ GameObject:
   - component: {fileID: 2127713281}
   m_Layer: 0
   m_Name: Cube (18)
-  m_TagString: Untagged
+  m_TagString: Tagprokamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

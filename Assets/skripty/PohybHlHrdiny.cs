@@ -141,6 +141,8 @@ public class PohybHlHrdiny : MonoBehaviour
         if(FFA.questy == 23 && intErekce.triggered)
         {
             FFA.body += FFA.bodyvlevelu;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
         }
         questsChanger();
@@ -238,7 +240,7 @@ public class PohybHlHrdiny : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "PortalTutor"|| collision.gameObject.tag == "Dvere" && FFA.key)
+        if (collision.gameObject.tag == "PortalTutor"|| collision.gameObject.tag == "Dvere" && FFA.key || collision.gameObject.tag == "Dvere" && FFA.questy == 22)
         {
             FFA.body += FFA.bodyvlevelu;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
@@ -281,7 +283,7 @@ public class PohybHlHrdiny : MonoBehaviour
         if(cs)
         {
             VC1.gameObject.SetActive(false);
-            Cursor.lockState = CursorLockMode.None;
+            Cursor.lockState = CursorLockMode.Confined;
             Cursor.visible = true;
             Pauza.gameObject.SetActive(true);
             Time.timeScale = 0;
@@ -308,83 +310,83 @@ public class PohybHlHrdiny : MonoBehaviour
         {
             //Tutor
             case 0:
-                questing.text = "Use SpaceBar to jump across gap between platforms.";
+                questing.text = "MezernÌk ti pom˘ûe p¯eskoËit dÌru mezi platfromama.";
                 break;
             case 1:
-                questing.text = "Use Shift to run to next platform.";
+                questing.text = "Shift ti pom˘ûe p¯ebÏhnout padajÌcÌ ploöiny.";
                 break;
             case 2:
-                questing.text = "Use E to push the button.";
+                questing.text = "Zkus pouûÌt E u tlaËÌtka.";
                 break;
             //Neon1
             case 3:
-                questing.text = "Find a Key.";
+                questing.text = "Najdi klÌË.";
                 break;
             case 4:
-                questing.text = "Get out of office.";
+                questing.text = "Jdi ven.";
                 break;
             case 5:
-                questing.text = "Find your time transporter and press E.";
+                questing.text = "Najdi auto a odjeÔ pryË.";
                 break;
             //Pir1
             case 6:
-                questing.text = "Get on second Island.";
+                questing.text = "Zkus se dostat na druh˝ ostrov.";
                 break;
             case 7:
-                questing.text = "Get on Pirats boat.";
+                questing.text = "P¯esuÚ se na pir·tskou loÔ.";
                 break;
             case 8:
-                questing.text = "Take the item you want.";
+                questing.text = "Vem si minci.";
                 break;
             //Pir2
             case 9:
-                questing.text = "Find something you can use to get on second island";
+                questing.text = "Najdi cestu jak se dostat na druh˝ ostrov.";
                 break;
             case 10:
-                questing.text = "Jump across boxes.";
+                questing.text = "Sk·kej p¯es krabice.";
                 break;
             case 11:
-                questing.text = "Get the hell out of here with your car.";
+                questing.text = "Nastartuj auto a odjeÔ.";
                 break;
             //Ves1
             case 12:
-                questing.text = "Find Adolf and talk to him.";
+                questing.text = "Najdi Adolfa a promluv si s nÌm.";
                 break;
             case 13:
-                questing.text = "Find Edvard and talk to him.";
+                questing.text = "Nadji Edvarda a promluv si s nÌm.";
                 break;
             case 14:
-                questing.text = "Take the unique horse and go to the forest";
+                questing.text = "NaskoË na v˘z za konÏm a odjeÔ.";
                 break;
             //Les
             case 15:
-                questing.text = "Sreach the Forest.";
+                questing.text = "Prohledej les.";
                 break;
             case 16:
-                questing.text = "You see the item you need take it.";
+                questing.text = "Vem si v·zu.";
                 break;
             case 17:
-                questing.text = "Now go back to your horse.";
+                questing.text = "Vraù se ke koni a odjeÔ do vesnice.";
                 break;
             //Ves2
             case 18:
-                questing.text = "Find Adolf and talk to him.";
+                questing.text = "Najdi Adolfa a promluv si s nÌm.";
                 break;
             case 19:
-                questing.text = "Find Nevil and talk to him.";
+                questing.text = "Najdi Nevila a promluv si s nÌm.";
                 break;
             case 20:
-                questing.text = "Go to your car.";
+                questing.text = "Nastartuj auto a odjeÔ.";
                 break;
             //Neon2
             case 21:
-                questing.text = "Show to your boss the items you found in past.";
+                questing.text = "Dej öefovi vÏci, kterÈ si naöel v minulosti.";
                 break;
             case 22:
-                questing.text = "You got the money go and buy Game you want.";
+                questing.text = "VydÏlal jsi si penÌze. Jdi si koupit hru k obchodnÌkovi ven.";
                 break;
             case 23:
-                questing.text = "Press E and start playing.";
+                questing.text = "Zm·ckni E a zaËni hr·t.";
                 break;
         }
     }
